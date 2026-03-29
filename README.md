@@ -94,7 +94,7 @@ Download the latest version from the [Releases](https://github.com/Onevium/Onevi
 
 | Platform | Architecture | Format |
 |----------|-------------|--------|
-| macOS | Apple Silicon (M1/M2/M3/M4) | `.dmg` |
+| macOS | Apple Silicon | `.dmg` |
 | macOS | Intel | `.dmg` |
 | Windows | x64 | `.exe` (NSIS installer) |
 | Linux | x64 | `.AppImage` |
