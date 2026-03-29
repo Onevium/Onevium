@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  A native desktop app that lets Claude browse the web, run agents on a schedule, and push results into your team channels.
+  A native desktop app that lets AI browse the web, run agents on a schedule, and push results into your team channels.
 </p>
 
 <p align="center">
@@ -22,10 +22,6 @@
   <a href="https://onevium.com">
     <img src="https://img.shields.io/badge/website-onevium.com-4f8c5e?style=flat-square" alt="Website" />
   </a>
-</p>
-
-<p align="center">
-  <sub>Built on Claude Code SDK</sub>
 </p>
 
 ---
@@ -71,6 +67,25 @@ The UI makes automation feel trustworthy. Reads, edits, shell commands, and perm
 - Approval modes that match your trust boundary
 - File rewind and session-level control for safer iteration
 
+## MCP Extensibility
+
+**Connect to any external service.**
+
+Extend capabilities through Model Context Protocol servers — databases, APIs, cloud services, and custom integrations.
+
+- User-level (global) or project-level scoping
+- Popular integrations: PostgreSQL, MySQL, GitHub, GitLab, Slack, Linear, Notion, AWS, GCP, Cloudflare
+
+## Skills & Agents
+
+**Build reusable workflows.**
+
+Create custom skills (slash commands) and agents with specific system prompts, model preferences, tool restrictions, and permission modes.
+
+- Reusable markdown templates invoked with `/`
+- Custom agents with scoped permissions per task
+- Project-level or global skill definitions
+
 ---
 
 ## Download
@@ -94,34 +109,13 @@ The UI makes automation feel trustworthy. Reads, edits, shell commands, and perm
 ## Requirements
 
 - macOS 12+ / Windows 10+ / Ubuntu 20.04+
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code): `npm install -g @anthropic-ai/claude-code`
 - Anthropic API key or Claude Pro/Max subscription
-
-## Pricing
-
-Every tier includes the full Onevium feature set.
-
-| | Single Device | Team |
-|---|---|---|
-| Browser automation | Included | Included |
-| Scheduled workflows | Included | Included |
-| Channel bots | Included | Included |
-| MCP extensibility | Included | Included |
-| Skills and agents | Included | Included |
-| Seats | 1 seat | Bulk purchasing |
-| Billing | Individual | Centralized |
-| Price | $39/mo or $399/yr | Custom pricing |
-
-[Compare pricing](https://onevium.com/pricing)
 
 ## Links
 
 - [Website](https://onevium.com)
 - [Documentation](https://onevium.com/docs)
+- [Pricing](https://onevium.com/pricing)
 - [Changelog](https://onevium.com/changelog)
 - [Blog](https://onevium.com/blog)
 - Support: support@onevium.com
-
-## License
-
-Onevium is proprietary software. See the [license agreement](https://onevium.com/terms) for details.
