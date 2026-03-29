@@ -90,13 +90,15 @@ Create custom skills (slash commands) and agents with specific system prompts, m
 
 ## Download
 
-| Platform | Architecture | Download |
-|----------|-------------|----------|
-| macOS | Apple Silicon (M1/M2/M3/M4) | [Onevium-1.0.0-arm64.dmg](https://github.com/Onevium/Onevium/releases/download/v1.0.0/Onevium-1.0.0-arm64.dmg) |
-| macOS | Intel | [Onevium-1.0.0-x64.dmg](https://github.com/Onevium/Onevium/releases/download/v1.0.0/Onevium-1.0.0-x64.dmg) |
-| Windows | x64 | [Onevium-Setup-1.0.0.exe](https://github.com/Onevium/Onevium/releases/download/v1.0.0/Onevium-Setup-1.0.0.exe) |
-| Linux | x64 | [Onevium-1.0.0-x86_64.AppImage](https://github.com/Onevium/Onevium/releases/download/v1.0.0/Onevium-1.0.0-x86_64.AppImage) |
-| Linux | ARM64 | [Onevium-1.0.0-arm64.AppImage](https://github.com/Onevium/Onevium/releases/download/v1.0.0/Onevium-1.0.0-arm64.AppImage) |
+Download the latest version from the [Releases](https://github.com/Onevium/Onevium/releases/latest) page.
+
+| Platform | Architecture | Format |
+|----------|-------------|--------|
+| macOS | Apple Silicon (M1/M2/M3/M4) | `.dmg` |
+| macOS | Intel | `.dmg` |
+| Windows | x64 | `.exe` (NSIS installer) |
+| Linux | x64 | `.AppImage` |
+| Linux | ARM64 | `.AppImage` |
 
 ## Installation
 
