@@ -24,6 +24,10 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://www.onevium.com/lucky"><strong>Open your Lucky Box — get up to 14 days free trial</strong></a>
+</p>
+
 ---
 
 ## Browser Automation
@@ -116,6 +120,7 @@ Download the latest version from the [Releases](https://github.com/Onevium/Onevi
 ## Links
 
 - [Website](https://onevium.com)
+- [Lucky Box — Free Trial](https://www.onevium.com/lucky)
 - [Documentation](https://onevium.com/docs)
 - [Pricing](https://onevium.com/pricing)
 - [Changelog](https://onevium.com/changelog)
