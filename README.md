@@ -30,6 +30,31 @@
 
 ---
 
+## What's New
+
+### v1.0.2 — Steer the AI Mid-Thought, Built-in Terminal, and Real-Time Activity Feed
+
+- **Steer** — Redirect your AI mid-stream: drop a new instruction while the model is still typing and watch it pivot in real time. Queue up to 10 steered messages with full recovery if the stream interrupts.
+- **Built-in Terminal** — A full xterm.js terminal inside Onevium — multi-tab, resize, spawn and kill processes without leaving the window.
+- **Activity Panel** — A live feed of running tasks, spawned subagents, background processes, and active monitors. Your agentic mission control.
+- **Memory Explorer** — Browse, search, and manage every memory your AI has formed — filterable by project, categorized with confidence scores.
+- **Message Minimap** — A VS Code-style navigation rail for long conversations. Hover to preview, click to jump.
+- **Cross-platform IDE Launch** — Open projects in Cursor, VS Code, IntelliJ IDEA, WebStorm, or Sublime Text on macOS and Windows.
+- **Proxy & Network Settings** — Configure HTTP and SOCKS5 proxies with a built-in connection tester.
+- **Image Lightbox Overhaul** — Zoom, pan, and rotate inline images. Widget diagrams and charts now export to PNG correctly.
+
+<details>
+<summary>v1.0.1</summary>
+
+- Initial public release
+- Browser automation, scheduled workflows, channel bots
+- MCP extensibility, skills & agents system
+- Cross-platform support (macOS, Windows, Linux)
+
+</details>
+
+---
+
 ## Browser Automation
 
 **Act across live web surfaces.**
