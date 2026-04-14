@@ -32,16 +32,27 @@
 
 ## What's New
 
-### v1.0.2 — Steer the AI Mid-Thought, Built-in Terminal, and Real-Time Activity Feed
+### v1.0.3 — Multi-Provider Model Support and System-Aware Proxy
 
-- **Steer** — Redirect your AI mid-stream: drop a new instruction while the model is still typing and watch it pivot in real time. Queue up to 10 steered messages with full recovery if the stream interrupts.
+- **Multi-Provider Model Switching** — Plug in any Anthropic-compatible provider and switch between them mid-conversation. First-class presets for **Anthropic Claude**, **Z.AI / BigModel (GLM)**, **Moonshot / Kimi**, and **MiniMax** — each with its own API key, base URL, and fully user-configurable model catalog.
+- **Per-Provider Usage Dashboard** — Click through directly to each provider's usage page to monitor quota and billing without leaving Onevium.
+- **Provider Model Sync** — Model catalogs sync from each provider's API in real time with availability checks.
+- **System-Aware Network Proxy** — Auto-detects your OS-level proxy on macOS, Windows, and Linux. Dedicated Network Proxy settings page with HTTP / HTTPS / SOCKS5, per-mode auth, and a built-in connection tester. Credentials encrypted at rest.
+- **Tool Detection** — Auto-detects installed developer tools (IDEs, shells, CLIs) for one-click launches.
+- **Process Control & Schedule Dialog** — Activity Panel processes rebuilt with full lifecycle tracking. Create Schedule form restructured for clarity.
+
+<details>
+<summary>v1.0.2 — Steer the AI Mid-Thought, Built-in Terminal, and Real-Time Activity Feed</summary>
+
+- **Steer** — Redirect your AI mid-stream: drop a new instruction while the model is still typing and watch it pivot in real time.
 - **Built-in Terminal** — A full xterm.js terminal inside Onevium — multi-tab, resize, spawn and kill processes without leaving the window.
-- **Activity Panel** — A live feed of running tasks, spawned subagents, background processes, and active monitors. Your agentic mission control.
+- **Activity Panel** — A live feed of running tasks, spawned subagents, background processes, and active monitors.
 - **Memory Explorer** — Browse, search, and manage every memory your AI has formed — filterable by project, categorized with confidence scores.
-- **Message Minimap** — A VS Code-style navigation rail for long conversations. Hover to preview, click to jump.
+- **Message Minimap** — A VS Code-style navigation rail for long conversations.
 - **Cross-platform IDE Launch** — Open projects in Cursor, VS Code, IntelliJ IDEA, WebStorm, or Sublime Text on macOS and Windows.
-- **Proxy & Network Settings** — Configure HTTP and SOCKS5 proxies with a built-in connection tester.
-- **Image Lightbox Overhaul** — Zoom, pan, and rotate inline images. Widget diagrams and charts now export to PNG correctly.
+- **Image Lightbox Overhaul** — Zoom, pan, and rotate inline images.
+
+</details>
 
 <details>
 <summary>v1.0.1</summary>
