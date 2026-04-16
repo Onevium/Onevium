@@ -32,14 +32,23 @@
 
 ## What's New
 
-### v1.0.3 — Multi-Provider Model Support and System-Aware Proxy
+### v1.0.4 — Inspector Pane, Agent Role Colors, and Connection Status Redesign
 
-- **Multi-Provider Model Switching** — Plug in any Anthropic-compatible provider and switch between them mid-conversation. First-class presets for **Anthropic Claude**, **Z.AI / BigModel (GLM)**, **Moonshot / Kimi**, and **MiniMax** — each with its own API key, base URL, and fully user-configurable model catalog.
-- **Per-Provider Usage Dashboard** — Click through directly to each provider's usage page to monitor quota and billing without leaving Onevium.
-- **Provider Model Sync** — Model catalogs sync from each provider's API in real time with availability checks.
-- **System-Aware Network Proxy** — Auto-detects your OS-level proxy on macOS, Windows, and Linux. Dedicated Network Proxy settings page with HTTP / HTTPS / SOCKS5, per-mode auth, and a built-in connection tester. Credentials encrypted at rest.
-- **Tool Detection** — Auto-detects installed developer tools (IDEs, shells, CLIs) for one-click launches.
-- **Process Control & Schedule Dialog** — Activity Panel processes rebuilt with full lifecycle tracking. Create Schedule form restructured for clarity.
+- **Inspector Pane** — A brand-new side panel with Review (inline diff viewer + git staging), File (syntax-highlighted preview), and Widget (interactive preview) tabs. Never leave the chat to review changes.
+- **Agent Role Colors** — Spawned subagents display distinct color-coded badges by role across tool call blocks and the Activity Panel. Instantly see who's doing what.
+- **Background Process Tracking** — Enhanced real-time visibility into agent-spawned processes with lifecycle tracking and one-click stop.
+- **Connection Status Redesign** — Richer state transitions, provider binding info, and clear error surfacing.
+- **Chat UI Refinements** — Streamlined full-access flow, improved new-session page, cleaner embedded terminal.
+
+<details>
+<summary>v1.0.3 — Multi-Provider Model Support and System-Aware Proxy</summary>
+
+- **Multi-Provider Model Switching** — First-class presets for Anthropic Claude, Z.AI / BigModel (GLM), Moonshot / Kimi, and MiniMax with fully user-configurable model catalogs.
+- **System-Aware Network Proxy** — Auto-detects OS-level proxy. Dedicated settings page with HTTP / HTTPS / SOCKS5, connection tester, encrypted credentials.
+- **Provider Model Sync** — Real-time model catalog sync from each provider's API.
+- **Tool Detection** — Auto-detects installed IDEs, shells, and CLIs for one-click launches.
+
+</details>
 
 <details>
 <summary>v1.0.2 — Steer the AI Mid-Thought, Built-in Terminal, and Real-Time Activity Feed</summary>
