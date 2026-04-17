@@ -32,13 +32,24 @@
 
 ## What's New
 
-### v1.0.4 — Inspector Pane, Agent Role Colors, and Connection Status Redesign
+### v1.0.5 — Claude Opus 4.7 and 1M Context Window
+
+- **Claude Opus 4.7 Support** — Default model upgraded to Anthropic's latest Opus generation. Opus 4.6 stays available as a Legacy option; existing chats retain their selected model.
+- **1M Context Window (Beta)** — New toggle in Settings → Claude CLI → Features enables the `context-1m-2025-08-07` beta for Opus/Sonnet on Anthropic endpoints. Third-party providers and Haiku are skipped automatically.
+- **Inspector Smart Routing** — Git repos land on the Review tab; non-git projects land on File. Clicking a file from chat jumps to the File tab and scrolls to the target line.
+- **Inspector Virtualization & Focus Refresh** — Large diffs and long file lists render smoothly; the panel auto-refreshes when the window regains focus.
+- **Cleaner Git Views** — Build artifacts (`release/`, `.next/`, `dist-electron/`) are auto-excluded from diff and status panels.
+
+<details>
+<summary>v1.0.4 — Inspector Pane, Agent Role Colors, and Connection Status Redesign</summary>
 
 - **Inspector Pane** — A brand-new side panel with Review (inline diff viewer + git staging), File (syntax-highlighted preview), and Widget (interactive preview) tabs. Never leave the chat to review changes.
 - **Agent Role Colors** — Spawned subagents display distinct color-coded badges by role across tool call blocks and the Activity Panel. Instantly see who's doing what.
 - **Background Process Tracking** — Enhanced real-time visibility into agent-spawned processes with lifecycle tracking and one-click stop.
 - **Connection Status Redesign** — Richer state transitions, provider binding info, and clear error surfacing.
 - **Chat UI Refinements** — Streamlined full-access flow, improved new-session page, cleaner embedded terminal.
+
+</details>
 
 <details>
 <summary>v1.0.3 — Multi-Provider Model Support and System-Aware Proxy</summary>
