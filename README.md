@@ -32,13 +32,29 @@
 
 ## What's New
 
-### v1.0.5 — Claude Opus 4.7 and 1M Context Window
+### v1.1.0 — Continuity, Browser, and a faster chat
+
+- **Turn Continuity v2** — Sessions resume reliably across sleep/wake, app restarts, and external interruptions. Tool approvals, todos, and streaming output stay coherent end-to-end. The old 30-minute stream lifetime ceiling is gone.
+- **In-app Sandbox Browser** — Preview any URL inside Onevium with a popover surface, on-page pins, an element picker for batch annotations, and a ⇧⌘P quick picker. New MCP tools let agents open and reload preview windows directly.
+- **Live Preview Reload** — Edit an HTML or source file and the in-app preview refreshes automatically. Dev servers (Next.js, Vite, etc.) are detected and prompted on startup.
+- **Persistent Chat Composer** — Drafts, attachments, and input state survive session switches. Switching feels instant.
+- **Reasoning Effort Picker** — Choose how hard the model thinks per turn, exposed alongside the model selector.
+- **Drag-to-Split Chat** — Pull a session into a new column with a drag, with a faster import shortcut.
+- **Faster Chat Rendering** — Heavy markdown and Prism syntax highlighting are deferred for long messages. Streaming and scrolling stay smooth on multi-thousand-line transcripts.
+- **Streaming Inspector** — File diffs and Git status update incrementally as tools run, with smart caching for untracked-heavy repos.
+- **Cross-platform File API** — Windows path handling rebuilt end-to-end; project trees, file previews, and diffs work correctly on non-home drives.
+- **Networking** — HTTPS proxy testing uses a real CONNECT tunnel; SDK traffic routes through an always-on local bridge.
+
+<details>
+<summary>v1.0.5 — Claude Opus 4.7 and 1M Context Window</summary>
 
 - **Claude Opus 4.7 Support** — Default model upgraded to Anthropic's latest Opus generation. Opus 4.6 stays available as a Legacy option; existing chats retain their selected model.
 - **1M Context Window (Beta)** — New toggle in Settings → Claude CLI → Features enables the `context-1m-2025-08-07` beta for Opus/Sonnet on Anthropic endpoints. Third-party providers and Haiku are skipped automatically.
 - **Inspector Smart Routing** — Git repos land on the Review tab; non-git projects land on File. Clicking a file from chat jumps to the File tab and scrolls to the target line.
 - **Inspector Virtualization & Focus Refresh** — Large diffs and long file lists render smoothly; the panel auto-refreshes when the window regains focus.
 - **Cleaner Git Views** — Build artifacts (`release/`, `.next/`, `dist-electron/`) are auto-excluded from diff and status panels.
+
+</details>
 
 <details>
 <summary>v1.0.4 — Inspector Pane, Agent Role Colors, and Connection Status Redesign</summary>
@@ -157,8 +173,6 @@ Download the latest version from the [Releases](https://github.com/Onevium/Onevi
 | macOS | Apple Silicon | `.dmg` |
 | macOS | Intel | `.dmg` |
 | Windows | x64 | `.exe` (NSIS installer) |
-| Linux | x64 | `.AppImage` |
-| Linux | ARM64 | `.AppImage` |
 
 ## Installation
 
@@ -166,11 +180,9 @@ Download the latest version from the [Releases](https://github.com/Onevium/Onevi
 
 **Windows** — Run the installer and follow the prompts.
 
-**Linux** — `chmod +x Onevium-*.AppImage && ./Onevium-*.AppImage`
-
 ## Requirements
 
-- macOS 12+ / Windows 10+ / Ubuntu 20.04+
+- macOS 12+ / Windows 10+
 - Anthropic API key or Claude Pro/Max subscription
 
 ## Links
