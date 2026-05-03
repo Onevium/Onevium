@@ -32,7 +32,7 @@
 
 ## What's New
 
-### v1.1.1 — Channels redesigned, a smarter Browser, and Automations v2
+### v1.1.2 — Channels redesigned, a smarter Browser, and Automations v2
 
 - **Channels — Redesigned multi-platform bridge.** Inline editing for every field, a unified creation flow with explicit credential registration, and a calmer list/detail layout that mirrors Automations. DingTalk bridges now @-mention people by their real display name, never lose a reply when an AI Card streaming call fails, and surface running state in the sidebar.
 - **Browser — Real browsing inside Onevium.** Persistent profile so cookies, history, and sessions survive launches. ⌘ / Ctrl + click on any Markdown link opens it inline with a clear hover badge — plain clicks still go to your default browser. Navigation shortcuts, auto-fit width, dialog clipping fix, and `file://` support for managed temp HTML.
@@ -41,6 +41,7 @@
 - **Platform-aware keyboard shortcuts.** Shortcuts display ⌘ on macOS and Ctrl on Windows/Linux, with the platform-native modifier order across menus, tooltips, and the inspector.
 - **Multi-column split view polish.** Active column focus is now distinguished by font weight, opacity, and a unified hairline rather than bright background tints. Hover hints toned down for a calmer multi-session view.
 - **Chat & streaming stability.** Stable assistant message IDs across the bridge → DB transition; smooth stop transitions; the streaming status bar remains visible even when the process view is hidden.
+- **Smoother streaming and a smarter File inspector.** Page scroll flows through the streaming reasoning area instead of getting trapped, and Write/Edit tool clicks in non-git projects route directly to the File tab with the right scroll-to-line target. Inline previews for images, audio, video, and PDF land in the File tab.
 
 <details>
 <summary>v1.1.0 — Continuity, Browser, and a faster chat</summary>
