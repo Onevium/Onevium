@@ -32,7 +32,18 @@
 
 ## What's New
 
-### v1.1.0 — Continuity, Browser, and a faster chat
+### v1.1.1 — Channels redesigned, a smarter Browser, and Automations v2
+
+- **Channels — Redesigned multi-platform bridge.** Inline editing for every field, a unified creation flow with explicit credential registration, and a calmer list/detail layout that mirrors Automations. DingTalk bridges now @-mention people by their real display name, never lose a reply when an AI Card streaming call fails, and surface running state in the sidebar.
+- **Browser — Real browsing inside Onevium.** Persistent profile so cookies, history, and sessions survive launches. ⌘ / Ctrl + click on any Markdown link opens it inline with a clear hover badge — plain clicks still go to your default browser. Navigation shortcuts, auto-fit width, dialog clipping fix, and `file://` support for managed temp HTML.
+- **Automations v2 ships in full.** A 1:1 redesign of the automations workspace with cleaner spacing, unified delete dialogs, and the legacy v1 path fully retired.
+- **Proxy — Global mode with authenticated proxies.** HTTP Basic auth on the global toggle, real outbound IP shown for verification, and the embedded terminal now routes through proxy-bridge so nothing leaks around the global setting.
+- **Platform-aware keyboard shortcuts.** Shortcuts display ⌘ on macOS and Ctrl on Windows/Linux, with the platform-native modifier order across menus, tooltips, and the inspector.
+- **Multi-column split view polish.** Active column focus is now distinguished by font weight, opacity, and a unified hairline rather than bright background tints. Hover hints toned down for a calmer multi-session view.
+- **Chat & streaming stability.** Stable assistant message IDs across the bridge → DB transition; smooth stop transitions; the streaming status bar remains visible even when the process view is hidden.
+
+<details>
+<summary>v1.1.0 — Continuity, Browser, and a faster chat</summary>
 
 - **Turn Continuity v2** — Sessions resume reliably across sleep/wake, app restarts, and external interruptions. Tool approvals, todos, and streaming output stay coherent end-to-end. The old 30-minute stream lifetime ceiling is gone.
 - **In-app Sandbox Browser** — Preview any URL inside Onevium with a popover surface, on-page pins, an element picker for batch annotations, and a ⇧⌘P quick picker. New MCP tools let agents open and reload preview windows directly.
@@ -44,6 +55,8 @@
 - **Streaming Inspector** — File diffs and Git status update incrementally as tools run, with smart caching for untracked-heavy repos.
 - **Cross-platform File API** — Windows path handling rebuilt end-to-end; project trees, file previews, and diffs work correctly on non-home drives.
 - **Networking** — HTTPS proxy testing uses a real CONNECT tunnel; SDK traffic routes through an always-on local bridge.
+
+</details>
 
 <details>
 <summary>v1.0.5 — Claude Opus 4.7 and 1M Context Window</summary>
