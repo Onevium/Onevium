@@ -32,7 +32,17 @@
 
 ## What's New
 
-### v1.1.2 — Channels redesigned, a smarter Browser, and Automations v2
+### v1.1.3 — Type `@` to Build Anything: Inline Capability Chips
+
+- **`@` summons all of Onevium.** Type `@` in any chat to call up nine built-in capabilities as colored inline chips — Skill, Memory, Agent, MCP, Plugin, Schedule, Channel, Browser, and Widget. Each chip launches a guided AI flow that produces a real artefact in your project: scaffold a skill, save context as memory, register an MCP server, schedule a recurring job, attach a DingTalk / Feishu / Discord channel, control the in-app browser, or build a custom widget. The chip looks identical in the input box, in historical messages, and in the message queue.
+- **Future-proof capability system.** Adding new capabilities in upcoming releases never breaks existing chats — old conversations keep rendering correctly, and new chips fall into place without an upgrade ritual.
+- **Tighter `@` menu visual.** Tools and files share a calmer popover with smaller padding, lighter borders, and a softer label color. Type to filter capabilities; hit `@/` to walk the project file tree. Group titles, entry rows, and chip squares read as one cohesive tool list.
+- **Cleaner session titles.** Titles auto-derived from messages with chips now show plain capability names in the sidebar, breadcrumb, and drag preview.
+- **Smoother macOS update prompt.** The in-app **Update Available** dialog now opens the GitHub release page directly, so a single click takes you to the latest download.
+- **Polished chat input & status pill.** Mode-aware placeholders (Plan / Code) explicitly invite "anything"; the streaming retry status pill moved from screen-center to the bottom-right "soft notification" zone, matching nudge alerts and clearing the line of sight on the input box.
+
+<details>
+<summary>v1.1.2 — Channels redesigned, a smarter Browser, and Automations v2</summary>
 
 - **Channels — Redesigned multi-platform bridge.** Inline editing for every field, a unified creation flow with explicit credential registration, and a calmer list/detail layout that mirrors Automations. DingTalk bridges now @-mention people by their real display name, never lose a reply when an AI Card streaming call fails, and surface running state in the sidebar.
 - **Browser — Real browsing inside Onevium.** Persistent profile so cookies, history, and sessions survive launches. ⌘ / Ctrl + click on any Markdown link opens it inline with a clear hover badge — plain clicks still go to your default browser. Navigation shortcuts, auto-fit width, dialog clipping fix, and `file://` support for managed temp HTML.
@@ -42,6 +52,8 @@
 - **Multi-column split view polish.** Active column focus is now distinguished by font weight, opacity, and a unified hairline rather than bright background tints. Hover hints toned down for a calmer multi-session view.
 - **Chat & streaming stability.** Stable assistant message IDs across the bridge → DB transition; smooth stop transitions; the streaming status bar remains visible even when the process view is hidden.
 - **Smoother streaming and a smarter File inspector.** Page scroll flows through the streaming reasoning area instead of getting trapped, and Write/Edit tool clicks in non-git projects route directly to the File tab with the right scroll-to-line target. Inline previews for images, audio, video, and PDF land in the File tab.
+
+</details>
 
 <details>
 <summary>v1.1.0 — Continuity, Browser, and a faster chat</summary>
