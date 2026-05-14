@@ -32,7 +32,20 @@
 
 ## What's New
 
-### v1.1.3 — Type `@` to Build Anything: Inline Capability Chips
+### v1.1.4 — Steer Reliability, Smoother Widgets, Refreshed Login
+
+- **Steer messages land reliably in the current turn.** Queued Steer messages once again inject mid-stream, even during tool calls. The earlier "queued message never lands" behavior is fixed at the root.
+- **Smoother widget rendering.** Widgets stream progressively with a smoother finalize step, raw HTML stays hidden until layout settles, and a safety net guarantees the final widget always becomes visible. The action bar now sits in a fixed slot above the iframe so it never overlaps content; drawio previews recover gracefully when the sandbox blocks initial load.
+- **Refreshed login & activation flow.** Animated particle wordmark, dedicated hero phase, and auto-verification of the email code. Activation feels noticeably faster and less click-heavy.
+- **Per-vendor cost visibility.** Anthropic rows reflect SDK-reported actual spend (Pro/Max subscribers no longer see inflated retail prices); third-party Anthropic-compatible proxies are recomputed against the local catalog. The Total Cost card now splits "Anthropic · actual" from "Others · list price" so you can see exactly where your spend comes from.
+- **Channels MCP tool group.** Agents can now read and update channel metadata directly from inside chat, with built-in redaction and setup guidance.
+- **Browser preview polish.** Comment popovers and pin overlays got a full pass — clearer affordances, better positioning, and a shared palette abstraction. Orphaned previews and lingering picker state are cleaned up reliably.
+- **Inspector pane discipline.** The Review tab now hides on non-git projects and routes write actions to the File tab. Empty Review state offers a one-click "Initialize Git" entry point.
+- **Quieter scroll behavior.** Ambient background updates use soft scroll so you're no longer yanked back to the latest line; the Thinking panel passes wheel events through to the page underneath.
+- **Latest engine.** Upgraded to **Claude Code 2.1.140** (Claude Agent SDK 0.2.140) for the latest CLI parity.
+
+<details>
+<summary>v1.1.3 — Type @ to Build Anything: Inline Capability Chips</summary>
 
 - **`@` summons all of Onevium.** Type `@` in any chat to call up nine built-in capabilities as colored inline chips — Skill, Memory, Agent, MCP, Plugin, Schedule, Channel, Browser, and Widget. Each chip launches a guided AI flow that produces a real artefact in your project: scaffold a skill, save context as memory, register an MCP server, schedule a recurring job, attach a DingTalk / Feishu / Discord channel, control the in-app browser, or build a custom widget. The chip looks identical in the input box, in historical messages, and in the message queue.
 - **Future-proof capability system.** Adding new capabilities in upcoming releases never breaks existing chats — old conversations keep rendering correctly, and new chips fall into place without an upgrade ritual.
@@ -40,6 +53,8 @@
 - **Cleaner session titles.** Titles auto-derived from messages with chips now show plain capability names in the sidebar, breadcrumb, and drag preview.
 - **Smoother macOS update prompt.** The in-app **Update Available** dialog now opens the GitHub release page directly, so a single click takes you to the latest download.
 - **Polished chat input & status pill.** Mode-aware placeholders (Plan / Code) explicitly invite "anything"; the streaming retry status pill moved from screen-center to the bottom-right "soft notification" zone, matching nudge alerts and clearing the line of sight on the input box.
+
+</details>
 
 <details>
 <summary>v1.1.2 — Channels redesigned, a smarter Browser, and Automations v2</summary>
