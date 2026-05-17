@@ -32,7 +32,17 @@
 
 ## What's New
 
-### v1.1.4 — Steer Reliability, Smoother Widgets, Refreshed Login
+### v1.1.5 — Smoother Settings, Sharper Inspector, Quieter Chat
+
+- **No more Settings hang on repeated navigation.** Settings sections, Channels, and Scheduled Tasks now stay responsive under heavy back-and-forth switching. Sidebar running-counts and the CLI import check are shared across re-mounts so re-mount bursts can't flood the request pipeline.
+- **Inspector sharpened.** `⌘F` searches inside the active file; the panel mounts on the `/chat` empty state so the file tree is always reachable; search no longer yanks scroll to top; "Open in external editor" gets a pending state with an opened-in-external affordance.
+- **Quieter chat surface.** Lighter sidebar typography, a revived chat skeleton, a muted plug icon for connection status, flat count badges (no more breathing pulse, gracefully truncates to "99+"), and the assistant message edge now aligns with the composer.
+- **Steadier chat behavior.** Image Agent state is scoped per split column; permission profile no longer flips back to Default on new or switched sessions; MessageMinimap triggers and PlusMenu close-on-toggle were polished.
+- **Chrome bridge no longer loops on failure.** A failed bridge start (e.g. Claude CLI missing) requires an explicit Retry now — no more silent auto-retry storms or lingering poll intervals in the main process.
+- **Schedules** — session_mode control is back in the create / edit dialogs.
+
+<details>
+<summary>v1.1.4 — Steer Reliability, Smoother Widgets, Refreshed Login</summary>
 
 - **Steer messages land reliably in the current turn.** Queued Steer messages once again inject mid-stream, even during tool calls. The earlier "queued message never lands" behavior is fixed at the root.
 - **Smoother widget rendering.** Widgets stream progressively with a smoother finalize step, raw HTML stays hidden until layout settles, and a safety net guarantees the final widget always becomes visible. The action bar now sits in a fixed slot above the iframe so it never overlaps content; drawio previews recover gracefully when the sandbox blocks initial load.
@@ -43,6 +53,8 @@
 - **Inspector pane discipline.** The Review tab now hides on non-git projects and routes write actions to the File tab. Empty Review state offers a one-click "Initialize Git" entry point.
 - **Quieter scroll behavior.** Ambient background updates use soft scroll so you're no longer yanked back to the latest line; the Thinking panel passes wheel events through to the page underneath.
 - **Latest engine.** Upgraded to **Claude Code 2.1.140** (Claude Agent SDK 0.2.140) for the latest CLI parity.
+
+</details>
 
 <details>
 <summary>v1.1.3 — Type @ to Build Anything: Inline Capability Chips</summary>
