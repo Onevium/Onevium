@@ -32,7 +32,21 @@
 
 ## What's New
 
-### v1.1.5 — Smoother Settings, Sharper Inspector, Quieter Chat
+### v1.1.6 — Memory that actually remembers, plus a cross-project morning briefing
+
+- **Memory v2 — three-layer context injection.** Every chat now opens with three layers of memory automatically stitched into the system prompt: a free-form **User Rules** Markdown editor (Settings → Autonomy) for hand-written global preferences, a 24h-cached digest of pinned memories and stable project facts, and a per-message hybrid local search (vector + full-text, top-5) that picks the most relevant memories for your current question. No network calls — the retrieval pipeline runs locally against on-device embeddings and SQLite.
+- **See exactly what got injected.** Every user bubble gets a small memory chip in its footer recording which memories were attached when the AI answered. Hover the bubble, click the chip, see the list with relevance scores. Snapshot is independent of the live store — editing or archiving a memory later doesn't change the audit trail.
+- **Daily Briefing — cross-project morning summary.** New sidebar entry that auto-generates a briefing every morning. "Pick up where you left off" hero zone with one-click resume into the right session, plus yesterday's decisions, things learned, what shipped, what failed, and what's still waiting for your reply. A "For you" insight card surfaces constructive observations on patterns from your own messages.
+- **Independent of Memory.** Daily Briefing has its own toggle, model selection (default Haiku), and daily-budget cap. Turn off Memory and the briefing still runs; the two memory-derived blocks (Decisions / Commitments) hide gracefully.
+- **Pin / Unpin projects in the sidebar.** Right-click any project group in the sessions list to pin it; pinned projects float to the top, sorted by most recently pinned first.
+- **Claude Agent SDK upgraded to 0.3.150.** Adopts the new TaskCreate / TaskUpdate / TaskGet / TaskList tools (TodoWrite is gone upstream — old conversations keep rendering correctly), clearer streaming state (`requesting…` / `compacting…`) for the previously silent "thinking" gap, and a friendlier error when the selected model isn't available from the current provider.
+- **Three-layer defense against streaming hangs.** Server-side iterator terminal-timeout, client snapshot staleness signal, and a DOM-side watchdog that reconciles from the database if the SSE channel goes silent for 30s+ on an active stream. Materially reduces the rare "Thinking…" stuck symptom on long sessions.
+- **AskUserQuestion and ExitPlanMode no longer abort after 5 minutes.** These cards keep the stream alive for up to 6 hours, so stepping away from a permission prompt doesn't lose the turn.
+- **Activity Panel — Clear completed.** Processes and Monitors sections gain a "Clear completed" button that wipes terminal-state rows for the current session without touching running services or parked monitors.
+- **Scheduled task `suspend_turn` grace extended to 1 hour.** Suspensions comfortably survive lunch breaks, meetings, and brief lid-close.
+
+<details>
+<summary>v1.1.5 — Smoother Settings, Sharper Inspector, Quieter Chat</summary>
 
 - **No more Settings hang on repeated navigation.** Settings sections, Channels, and Scheduled Tasks now stay responsive under heavy back-and-forth switching. Sidebar running-counts and the CLI import check are shared across re-mounts so re-mount bursts can't flood the request pipeline.
 - **Inspector sharpened.** `⌘F` searches inside the active file; the panel mounts on the `/chat` empty state so the file tree is always reachable; search no longer yanks scroll to top; "Open in external editor" gets a pending state with an opened-in-external affordance.
@@ -40,6 +54,8 @@
 - **Steadier chat behavior.** Image Agent state is scoped per split column; permission profile no longer flips back to Default on new or switched sessions; MessageMinimap triggers and PlusMenu close-on-toggle were polished.
 - **Chrome bridge no longer loops on failure.** A failed bridge start (e.g. Claude CLI missing) requires an explicit Retry now — no more silent auto-retry storms or lingering poll intervals in the main process.
 - **Schedules** — session_mode control is back in the create / edit dialogs.
+
+</details>
 
 <details>
 <summary>v1.1.4 — Steer Reliability, Smoother Widgets, Refreshed Login</summary>
