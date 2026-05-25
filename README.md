@@ -32,7 +32,17 @@
 
 ## What's New
 
-### v1.1.6 — Memory that actually remembers, plus a cross-project morning briefing
+### v1.1.7 — Daily Briefing reliability, faster git diff, and tighter production hardening
+
+- **Daily Briefing reads cleanly.** The "For you" insight no longer leaks raw JSON braces or wrapper text — content is generated as plain prose with a defence-in-depth fallback that strips any JSON-shaped escape that slips through.
+- **Faster git diff in the Inspector.** The Review tab opens noticeably faster on large repos. Diff hunks render in chunks, the underlying API does less synchronous work, and switching between files no longer freezes the panel.
+- **Background work keeps your machine awake.** Onevium now holds a `prevent-app-suspension` power assertion while a session is running, a channel is processing a message, or a scheduled task is in flight — and releases it the moment the work ends. Sessions, channels, and schedules no longer get killed when the laptop idles to sleep.
+- **Smoother chat motion.** Freshly-sent user messages slide up into place with a short, calm easing; existing history loads instantly without any entrance animation. Split columns refresh their titles and message state reliably when you swap sessions between columns, and the top progress bar no longer gets stuck in split mode.
+- **Tighter production builds.** DevTools is now disabled in packaged releases — there's no longer a way to open the React inspector or pry into internal state from a shipped build. Dev mode is unaffected.
+- **Trial period for new email signups now reads from the admin panel.** New Onevium accounts get a 7-day trial by default; the duration can be changed in real time from the admin panel without redeploying the auth worker.
+
+<details>
+<summary>v1.1.6 — Memory that actually remembers, plus a cross-project morning briefing</summary>
 
 - **Memory v2 — three-layer context injection.** Every chat now opens with three layers of memory automatically stitched into the system prompt: a free-form **User Rules** Markdown editor (Settings → Autonomy) for hand-written global preferences, a 24h-cached digest of pinned memories and stable project facts, and a per-message hybrid local search (vector + full-text, top-5) that picks the most relevant memories for your current question. No network calls — the retrieval pipeline runs locally against on-device embeddings and SQLite.
 - **See exactly what got injected.** Every user bubble gets a small memory chip in its footer recording which memories were attached when the AI answered. Hover the bubble, click the chip, see the list with relevance scores. Snapshot is independent of the live store — editing or archiving a memory later doesn't change the audit trail.
@@ -44,6 +54,8 @@
 - **AskUserQuestion and ExitPlanMode no longer abort after 5 minutes.** These cards keep the stream alive for up to 6 hours, so stepping away from a permission prompt doesn't lose the turn.
 - **Activity Panel — Clear completed.** Processes and Monitors sections gain a "Clear completed" button that wipes terminal-state rows for the current session without touching running services or parked monitors.
 - **Scheduled task `suspend_turn` grace extended to 1 hour.** Suspensions comfortably survive lunch breaks, meetings, and brief lid-close.
+
+</details>
 
 <details>
 <summary>v1.1.5 — Smoother Settings, Sharper Inspector, Quieter Chat</summary>
