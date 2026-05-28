@@ -32,7 +32,17 @@
 
 ## What's New
 
-### v1.1.7 — Daily Briefing reliability, faster git diff, and tighter production hardening
+### v1.1.9 — Claude Opus 4.8 on day one, Memory v2 window-extraction, chat error boundaries
+
+- **Claude Opus 4.8 on launch day.** Onevium 1.1.9 ships with `claude-opus-4-8` wired into the model picker, the effort tiers (low / medium / high / xhigh / max), and the usage-cost catalog from the moment you update. A database migration reseeds the model list for users who connected Anthropic before 4.8 shipped, so it appears in Settings → Providers → Manage Models automatically.
+- **Memory v2 — window-extraction redesign.** The extractor now sees the last N user+assistant turns (N = frequency: high=1, mid=3, low=5) instead of a single-turn snapshot, and existing session memories are passed alongside the prompt so the model stops re-extracting facts it already captured. Dedup collapsed from a two-stage election + merge into a single reconcile pass that decides NONE / UPDATE / MERGE / ADD per candidate. Chinese-language recall is materially better.
+- **Chat error boundaries.** A malformed message can no longer crash the whole list. Individual bubbles fall back to an error placeholder while the rest of the conversation keeps rendering.
+- **Memory recall popover redesigned.** Hidden scrollbar, fade gradients at the edges, click-to-expand long memories, and project-aware origin labels (so you can tell which project a global memory came from). Scrolling through long recall lists is much smoother.
+- **Per-project memory extraction blocklist.** Exclude individual projects from automatic memory extraction without disabling extraction globally. Existing memories from excluded projects still recall normally; only new writes are suppressed.
+- **Polish across surfaces.** Auto-continue affordance centred under the last bubble, image grid cell overflow fixed on narrow widths, CompactingPill animation softened.
+
+<details>
+<summary>v1.1.7 — Daily Briefing reliability, faster git diff, and tighter production hardening</summary>
 
 - **Daily Briefing reads cleanly.** The "For you" insight no longer leaks raw JSON braces or wrapper text — content is generated as plain prose with a defence-in-depth fallback that strips any JSON-shaped escape that slips through.
 - **Faster git diff in the Inspector.** The Review tab opens noticeably faster on large repos. Diff hunks render in chunks, the underlying API does less synchronous work, and switching between files no longer freezes the panel.
@@ -40,6 +50,8 @@
 - **Smoother chat motion.** Freshly-sent user messages slide up into place with a short, calm easing; existing history loads instantly without any entrance animation. Split columns refresh their titles and message state reliably when you swap sessions between columns, and the top progress bar no longer gets stuck in split mode.
 - **Tighter production builds.** DevTools is now disabled in packaged releases — there's no longer a way to open the React inspector or pry into internal state from a shipped build. Dev mode is unaffected.
 - **Trial period for new email signups now reads from the admin panel.** New Onevium accounts get a 7-day trial by default; the duration can be changed in real time from the admin panel without redeploying the auth worker.
+
+</details>
 
 <details>
 <summary>v1.1.6 — Memory that actually remembers, plus a cross-project morning briefing</summary>
