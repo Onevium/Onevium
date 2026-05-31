@@ -32,7 +32,16 @@
 
 ## What's New
 
-### v1.1.9 — Claude Opus 4.8 on day one, Memory v2 window-extraction, chat error boundaries
+### v1.1.10 — Ultracode: multi-agent workflows for Claude Opus 4.8
+
+- **Ultracode mode.** A one-tap mode for Claude Opus 4.8 that runs your task as a multi-agent workflow — the model decomposes the work, dispatches sub-agents in parallel, verifies their findings against each other, and synthesizes one result. Toggle it from the composer; the choice persists with the session and can be flipped mid-stream.
+- **Inline workflow card.** Every workflow collapses into a single live card in the conversation: sub-agents grouped by type, per-agent run / done / fail status, and a workflow title. Expand any sub-agent to read its full transcript, and follow a running agent's output as it streams without scrolling to chase the latest line.
+- **Live reattach.** Reload the window, drop your connection, or switch sessions mid-turn — Onevium reconnects to the in-progress reply, keeps streaming it, then hands off seamlessly to the finished message. Turns no longer get stuck after a refresh.
+- **Turn continuity hardened.** A self-notifying background task (a workflow, an agent, or a background process) no longer double-wakes a parked turn, removing a spurious error and duplicate work, and a turn is no longer idle-aborted while a workflow or background agent is still running.
+- **More.** Workflow progress in the Activity Panel, mid-stream effort and Ultracode switching, a confirm-on-quit dialog with a macOS reopen fix, and the Claude Agent SDK upgraded to 0.3.156.
+
+<details>
+<summary>v1.1.9 — Claude Opus 4.8 on day one, Memory v2 window-extraction, chat error boundaries</summary>
 
 - **Claude Opus 4.8 on launch day.** Onevium 1.1.9 ships with `claude-opus-4-8` wired into the model picker, the effort tiers (low / medium / high / xhigh / max), and the usage-cost catalog from the moment you update. A database migration reseeds the model list for users who connected Anthropic before 4.8 shipped, so it appears in Settings → Providers → Manage Models automatically.
 - **Memory v2 — window-extraction redesign.** The extractor now sees the last N user+assistant turns (N = frequency: high=1, mid=3, low=5) instead of a single-turn snapshot, and existing session memories are passed alongside the prompt so the model stops re-extracting facts it already captured. Dedup collapsed from a two-stage election + merge into a single reconcile pass that decides NONE / UPDATE / MERGE / ADD per candidate. Chinese-language recall is materially better.
@@ -40,6 +49,7 @@
 - **Memory recall popover redesigned.** Hidden scrollbar, fade gradients at the edges, click-to-expand long memories, and project-aware origin labels (so you can tell which project a global memory came from). Scrolling through long recall lists is much smoother.
 - **Per-project memory extraction blocklist.** Exclude individual projects from automatic memory extraction without disabling extraction globally. Existing memories from excluded projects still recall normally; only new writes are suppressed.
 - **Polish across surfaces.** Auto-continue affordance centred under the last bubble, image grid cell overflow fixed on narrow widths, CompactingPill animation softened.
+</details>
 
 <details>
 <summary>v1.1.7 — Daily Briefing reliability, faster git diff, and tighter production hardening</summary>
