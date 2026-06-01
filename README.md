@@ -32,13 +32,24 @@
 
 ## What's New
 
-### v1.1.10 — Ultracode: multi-agent workflows for Claude Opus 4.8
+### v1.1.11 — Reliable Channels, hardened networking
+
+- **Channels reconnection rebuilt end-to-end.** Bots self-heal on transient network issues with bounded, jittered backoff, and never give up while the app is running. Idle bots no longer get flagged as down by a single blip.
+- **Connection-health indicator on the sidebar.** Sustained connection failures surface as a red badge on the Channels nav so you know when a bot needs attention, without having to open the panel.
+- **System-wide network hardening.** Outbound connection limits and request timeouts prevent any single integration from affecting the rest of the app under poor network conditions.
+
+> ⚠️ Manual download recommended — automatic update from v1.1.10 may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.10 — Ultracode: multi-agent workflows for Claude Opus 4.8</summary>
 
 - **Ultracode mode.** A one-tap mode for Claude Opus 4.8 that runs your task as a multi-agent workflow — the model decomposes the work, dispatches sub-agents in parallel, verifies their findings against each other, and synthesizes one result. Toggle it from the composer; the choice persists with the session and can be flipped mid-stream.
 - **Inline workflow card.** Every workflow collapses into a single live card in the conversation: sub-agents grouped by type, per-agent run / done / fail status, and a workflow title. Expand any sub-agent to read its full transcript, and follow a running agent's output as it streams without scrolling to chase the latest line.
 - **Live reattach.** Reload the window, drop your connection, or switch sessions mid-turn — Onevium reconnects to the in-progress reply, keeps streaming it, then hands off seamlessly to the finished message. Turns no longer get stuck after a refresh.
 - **Turn continuity hardened.** A self-notifying background task (a workflow, an agent, or a background process) no longer double-wakes a parked turn, removing a spurious error and duplicate work, and a turn is no longer idle-aborted while a workflow or background agent is still running.
 - **More.** Workflow progress in the Activity Panel, mid-stream effort and Ultracode switching, a confirm-on-quit dialog with a macOS reopen fix, and the Claude Agent SDK upgraded to 0.3.156.
+
+</details>
 
 <details>
 <summary>v1.1.9 — Claude Opus 4.8 on day one, Memory v2 window-extraction, chat error boundaries</summary>
