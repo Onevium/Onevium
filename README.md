@@ -32,13 +32,14 @@
 
 ## What's New
 
-### v1.1.11 — Reliable Channels, hardened networking
+### v1.1.12 — Stability fixes + reliable Channels reconnection
 
-- **Channels reconnection rebuilt end-to-end.** Bots self-heal on transient network issues with bounded, jittered backoff, and never give up while the app is running. Idle bots no longer get flagged as down by a single blip.
-- **Connection-health indicator on the sidebar.** Sustained connection failures surface as a red badge on the Channels nav so you know when a bot needs attention, without having to open the panel.
-- **System-wide network hardening.** Outbound connection limits and request timeouts prevent any single integration from affecting the rest of the app under poor network conditions.
+- **Channels stability.** Bots stay connected reliably and recover automatically; a new health indicator on the sidebar surfaces any bot needing attention.
+- **Smoother live chat stream.** Replies keep flowing even when Onevium is in the background, behind another window, or on another Space.
+- **Instant action feedback.** Confirming a Question from Claude collapses the card immediately, no more "click with no response" gap.
+- **General reliability hardening** across startup, packaging, and the app surface.
 
-> ⚠️ Manual download recommended — automatic update from v1.1.10 may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
 
 <details>
 <summary>v1.1.10 — Ultracode: multi-agent workflows for Claude Opus 4.8</summary>
