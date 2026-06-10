@@ -32,14 +32,26 @@
 
 ## What's New
 
-### v1.1.12 — Stability fixes + reliable Channels reconnection
+### v1.1.13 — Claude Fable 5, latest Claude Agent SDK, smarter continuity
+
+- **Claude Fable 5 support.** Anthropic's new Mythos-class model is now selectable alongside Opus 4.8 and Sonnet 4.6. Opt-in, priced at $10 / $50 per MTok. Opus 4.8 remains the default for new chats.
+- **Claude Agent SDK 0.3.170.** Bumped from 0.3.158 across this release, picking up upstream fixes and three latent optimizations. M1 regression resolved.
+- **Auto-continuity for promised work.** When the assistant says it will come back with results later AND has live background work running, Onevium automatically wakes the turn when that work finishes. Stale background tasks also expose a manual "let AI continue" button.
+- **Per-session reasoning level + per-model default.** Each chat remembers its own reasoning effort (low / medium / high). Settings → General now has a per-model default for new sessions.
+- **Live sub-agent following.** Drill into any running sub-agent and watch its transcript stream in real time. Cards anchor where you triggered them, expand smoothly, and stay visible across long workflows. Cancel any sub-agent independently with F5.
+- **More.** @Recap MCP for activity queries, smarter daily briefing ranking with copy-as-narrative, Review panel discard / revert-all with archive, Activity split panel polish, response time in message footer, and CJK memory recall fixes.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.12 — Stability fixes + reliable Channels reconnection</summary>
 
 - **Channels stability.** Bots stay connected reliably and recover automatically; a new health indicator on the sidebar surfaces any bot needing attention.
 - **Smoother live chat stream.** Replies keep flowing even when Onevium is in the background, behind another window, or on another Space.
 - **Instant action feedback.** Confirming a Question from Claude collapses the card immediately, no more "click with no response" gap.
 - **General reliability hardening** across startup, packaging, and the app surface.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.10 — Ultracode: multi-agent workflows for Claude Opus 4.8</summary>
