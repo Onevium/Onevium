@@ -32,7 +32,18 @@
 
 ## What's New
 
-### v1.1.13 — Claude Fable 5, latest Claude Agent SDK, smarter continuity
+### v1.1.14 — Sharper memory recall, in-page reattach, role-model mapping
+
+- **Memory recall v2.2 — cross-encoder reranker.** A new precision gate (bge-reranker-base) reads each (query, memory) pair jointly on top of the cosine + BM25 + entity candidate pool. On real Onevium memory the old cosine path ranked unrelated same-project memories ABOVE the relevant one at 0.70+ similarity; the reranker pushes those down to ≤0.10 relevance. A cold reranker degrades silently to the v2.1 path — the first message after upgrade is never blocked.
+- **In-page reattach to running turns.** Open any chat with a server-side turn still running and the reply continues inline; the input is locked while it streams; the sidebar shows a per-session in-progress indicator so you can always find it. No more "background finished but the page is dead" state.
+- **Per-provider role-model mapping.** Custom Anthropic-compatible providers now expose an editable role → model table (opus / sonnet / haiku) in Settings → Providers. Useful for company gateways that default to a model you don't want.
+- **Long-task protocol split.** The system prompt now distinguishes self-monitoring background work from foreground build / test commands, so a long build is no longer pushed into a `run_in_background` slot that will be reaped before it finishes.
+- **More.** Workflow card persistence across stream → persistence handoff, streaming flicker fix (no backdrop-blur), sidebar polling dedupe, preview teardown fix, simpler auto-continue surfaces.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.13 — Claude Fable 5, latest Claude Agent SDK, smarter continuity</summary>
 
 - **Claude Fable 5 support.** Anthropic's new Mythos-class model is now selectable alongside Opus 4.8 and Sonnet 4.6. Opt-in, priced at $10 / $50 per MTok. Opus 4.8 remains the default for new chats.
 - **Claude Agent SDK 0.3.170.** Bumped from 0.3.158 across this release, picking up upstream fixes and three latent optimizations. M1 regression resolved.
@@ -41,7 +52,7 @@
 - **Live sub-agent following.** Drill into any running sub-agent and watch its transcript stream in real time. Cards anchor where you triggered them, expand smoothly, and stay visible across long workflows. Cancel any sub-agent independently with F5.
 - **More.** @Recap MCP for activity queries, smarter daily briefing ranking with copy-as-narrative, Review panel discard / revert-all with archive, Activity split panel polish, response time in message footer, and CJK memory recall fixes.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.12 — Stability fixes + reliable Channels reconnection</summary>
