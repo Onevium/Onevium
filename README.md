@@ -32,7 +32,19 @@
 
 ## What's New
 
-### v1.1.14 — Sharper memory recall, in-page reattach, role-model mapping
+### v1.1.15 — Smarter model awareness & clearer permissions
+
+- **Model-switch alerts.** If Claude declines a turn and the session falls back to a different model, Onevium now tells you instead of silently continuing on another model.
+- **Clearer tool permissions.** Approval cards show human-readable tool names (especially for MCP tools) instead of raw wire identifiers, so you know exactly what you're approving.
+- **Safety-check notices.** When a risky operation is blocked by a safety check, you get a clear heads-up instead of a buried error.
+- **Latest Claude Agent SDK (0.3.195).** Bumped from 0.3.170, picking up the newest models and upstream reliability fixes.
+- **Accurate context meter.** The context-window indicator now reads your model's real window size straight from the SDK, so it's correct on large-context (1M) models instead of overstating usage.
+- **More.** Smoother reconnect to in-progress turns and more reliable long-running task waits.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.14 — Sharper memory recall, in-page reattach, role-model mapping</summary>
 
 - **Memory recall v2.2 — cross-encoder reranker.** A new precision gate (bge-reranker-base) reads each (query, memory) pair jointly on top of the cosine + BM25 + entity candidate pool. On real Onevium memory the old cosine path ranked unrelated same-project memories ABOVE the relevant one at 0.70+ similarity; the reranker pushes those down to ≤0.10 relevance. A cold reranker degrades silently to the v2.1 path — the first message after upgrade is never blocked.
 - **In-page reattach to running turns.** Open any chat with a server-side turn still running and the reply continues inline; the input is locked while it streams; the sidebar shows a per-session in-progress indicator so you can always find it. No more "background finished but the page is dead" state.
@@ -40,7 +52,7 @@
 - **Long-task protocol split.** The system prompt now distinguishes self-monitoring background work from foreground build / test commands, so a long build is no longer pushed into a `run_in_background` slot that will be reaped before it finishes.
 - **More.** Workflow card persistence across stream → persistence handoff, streaming flicker fix (no backdrop-blur), sidebar polling dedupe, preview teardown fix, simpler auto-continue surfaces.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.13 — Claude Fable 5, latest Claude Agent SDK, smarter continuity</summary>
