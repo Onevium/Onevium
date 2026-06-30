@@ -32,7 +32,15 @@
 
 ## What's New
 
-### v1.1.15 — Smarter model awareness & clearer permissions
+### v1.1.16 — Workflow reliability hotfix
+
+- **Workflows no longer get interrupted mid-run.** A live Workflow is now correctly recognized as in-flight, so the resume/wake path waits for it to finish instead of aborting it.
+- **Reliable resume after a Workflow.** When a turn launches a Workflow and waits, the conversation always wakes back up with the Workflow's results — no more "it ran but nothing came back."
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.15 — Smarter model awareness & clearer permissions</summary>
 
 - **Model-switch alerts.** If Claude declines a turn and the session falls back to a different model, Onevium now tells you instead of silently continuing on another model.
 - **Clearer tool permissions.** Approval cards show human-readable tool names (especially for MCP tools) instead of raw wire identifiers, so you know exactly what you're approving.
@@ -41,7 +49,7 @@
 - **Accurate context meter.** The context-window indicator now reads your model's real window size straight from the SDK, so it's correct on large-context (1M) models instead of overstating usage.
 - **More.** Smoother reconnect to in-progress turns and more reliable long-running task waits.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.14 — Sharper memory recall, in-page reattach, role-model mapping</summary>
