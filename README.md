@@ -32,12 +32,25 @@
 
 ## What's New
 
-### v1.1.16 — Workflow reliability hotfix
+### v1.1.17 — Faster everywhere, workflow progress you can trust
+
+- **Big diffs open instantly.** Reviewing a change in a large file no longer freezes the app — diff views highlight only the lines on screen.
+- **Smoother streaming & long sessions.** Render work per streamed token is roughly halved, and messages outside the viewport skip layout entirely, so long conversations stay fluid.
+- **Workflow progress you can trust.** The workflow card reconciles against durable run records — it always reaches its true final state (even for background workflows or after a restart), shows live per-agent completion counts, and freezes all motion when the run finishes.
+- **Crisper icons on Windows.** Toolbar and navigation icons pin their stroke width physically, fixing the fuzzy look on 125%/150% display scaling.
+- **Low-graphics auto mode.** Machines whose GPU falls back to software compositing get decorative animations switched off automatically — no setup needed.
+- **Lighter on your machine.** Background polling pauses while minimized; internal caches are now bounded.
+- **Windows platform fixes.** Feishu/Lark file downloads, "Show in File Explorer", Ctrl+↑/↓ diff navigation, and background AI features (automatic Git Bash detection) now work correctly.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.16 — Workflow reliability hotfix</summary>
 
 - **Workflows no longer get interrupted mid-run.** A live Workflow is now correctly recognized as in-flight, so the resume/wake path waits for it to finish instead of aborting it.
 - **Reliable resume after a Workflow.** When a turn launches a Workflow and waits, the conversation always wakes back up with the Workflow's results — no more "it ran but nothing came back."
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.15 — Smarter model awareness & clearer permissions</summary>
