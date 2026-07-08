@@ -32,7 +32,19 @@
 
 ## What's New
 
-### v1.1.17 — Faster everywhere, workflow progress you can trust
+### v1.1.18 — Usage insights, persistent terminals, in-chat command cards
+
+- **Usage page.** Settings → Usage shows your Claude account, live plan limits as clear progress bars, and a behavior-analysis panel — see how your session and weekly quotas are trending at a glance.
+- **Terminals that remember.** The built-in terminal is now cached per project: collapse it and your history and running processes are still there when you reopen, and every session in a project shares the same terminal.
+- **In-chat command cards.** Running `/usage`, `/context`, `/config`, or `/recap` in chat renders a clean, readable card instead of raw text output.
+- **Richer session menu.** Right-click any session in the sidebar to copy its path, open it in the built-in terminal, or open it in your editor of choice.
+- **Live session list.** The sidebar updates the moment a session changes through a lightweight push channel, without re-rendering the whole list on every tick.
+- **Smoother display.** Messages scrolled off-screen skip rendering entirely, and decorative effects step down automatically on GPUs without hardware compositing, keeping long sessions and split views fluid.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.17 — Faster everywhere, workflow progress you can trust</summary>
 
 - **Big diffs open instantly.** Reviewing a change in a large file no longer freezes the app — diff views highlight only the lines on screen.
 - **Smoother streaming & long sessions.** Render work per streamed token is roughly halved, and messages outside the viewport skip layout entirely, so long conversations stay fluid.
@@ -42,7 +54,7 @@
 - **Lighter on your machine.** Background polling pauses while minimized; internal caches are now bounded.
 - **Windows platform fixes.** Feishu/Lark file downloads, "Show in File Explorer", Ctrl+↑/↓ diff navigation, and background AI features (automatic Git Bash detection) now work correctly.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.16 — Workflow reliability hotfix</summary>
