@@ -32,7 +32,20 @@
 
 ## What's New
 
-### v1.1.18 — Usage insights, persistent terminals, in-chat command cards
+### v1.1.19 — Goal mode, editable canvases, and a more reliable built-in browser
+
+- **Goal mode.** Use `/goal` to give longer work a concrete completion condition, with live progress, elapsed time, and the latest check shown in the session.
+- **Editable SVG canvases.** Select, move, edit, connect, resize, and save generated visual work directly from the conversation.
+- **A more reliable built-in browser.** Reopening and refreshing AI-controlled pages is steadier, with improved screenshots, downloads, viewports, cookies, and profile handling.
+- **Calmer split conversations.** Clearer active columns, lighter dividers, adaptive narrow composers, equal-width reset, and layouts that survive refresh or relaunch.
+- **Settings above split views.** Settings now stay in a dedicated overlay layer, with predictable nested dialogs, menus, focus, Escape handling, and scrolling.
+- **Faster review loops.** Focused file previews, steadier project routing, and clean cancellation handling in Monaco diffs.
+- **Updated Claude support.** Claude Agent SDK 0.3.226, Anthropic SDK 0.116.0, refreshed model capabilities, and safer provider migrations.
+
+> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.18 — Usage insights, persistent terminals, in-chat command cards</summary>
 
 - **Usage page.** Settings → Usage shows your Claude account, live plan limits as clear progress bars, and a behavior-analysis panel — see how your session and weekly quotas are trending at a glance.
 - **Terminals that remember.** The built-in terminal is now cached per project: collapse it and your history and running processes are still there when you reopen, and every session in a project shares the same terminal.
@@ -41,7 +54,7 @@
 - **Live session list.** The sidebar updates the moment a session changes through a lightweight push channel, without re-rendering the whole list on every tick.
 - **Smoother display.** Messages scrolled off-screen skip rendering entirely, and decorative effects step down automatically on GPUs without hardware compositing, keeping long sessions and split views fluid.
 
-> ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.17 — Faster everywhere, workflow progress you can trust</summary>
