@@ -32,7 +32,18 @@
 
 ## What's New
 
-### v1.1.19 — Goal mode, editable canvases, and a more reliable built-in browser
+### v1.1.20 — Reliable upgrades and steadier tool runs
+
+- **Reliable Windows upgrades.** Installer-triggered restarts now follow the update-owned shutdown path, so normal quit confirmation cannot leave the upgrade half-finished or reopen to a blank window.
+- **Startup recovery instead of a blank screen.** The app registers its first navigation listener before loading and automatically recovers the embedded service after an unexpected exit, while preserving the page you were on.
+- **Long-running tools stay connected.** Legitimate scripts keep their activity heartbeat and are not killed by a blanket timeout; only malformed commands that would wait forever for inherited input are rejected before launch.
+- **Tool failures finish cleanly.** Failed tool hooks now emit a terminal result, preventing command cards from remaining stuck in “Running”.
+- **Stronger platform packages.** macOS, Windows, and Linux builds validate and prune architecture-specific native binaries before the installer is created.
+
+> ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.19 — Goal mode, editable canvases, and a more reliable built-in browser</summary>
 
 - **Goal mode.** Use `/goal` to give longer work a concrete completion condition, with live progress, elapsed time, and the latest check shown in the session.
 - **Editable SVG canvases.** Select, move, edit, connect, resize, and save generated visual work directly from the conversation.
@@ -43,6 +54,8 @@
 - **Updated Claude support.** Claude Agent SDK 0.3.226, Anthropic SDK 0.116.0, refreshed model capabilities, and safer provider migrations.
 
 > ⚠️ Manual download recommended — automatic update from older versions may fail on macOS due to ad-hoc code signing. Just download the installer below and reinstall over the existing app.
+
+</details>
 
 <details>
 <summary>v1.1.18 — Usage insights, persistent terminals, in-chat command cards</summary>
