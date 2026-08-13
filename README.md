@@ -32,13 +32,14 @@
 
 ## What's New
 
-### v1.1.20 — Reliable upgrades and steadier tool runs
+### v1.1.21 — Rock-solid on Windows
 
-- **Reliable Windows upgrades.** Installer-triggered restarts now follow the update-owned shutdown path, so normal quit confirmation cannot leave the upgrade half-finished or reopen to a blank window.
-- **Startup recovery instead of a blank screen.** The app registers its first navigation listener before loading and automatically recovers the embedded service after an unexpected exit, while preserving the page you were on.
-- **Long-running tools stay connected.** Legitimate scripts keep their activity heartbeat and are not killed by a blanket timeout; only malformed commands that would wait forever for inherited input are rejected before launch.
-- **Tool failures finish cleanly.** Failed tool hooks now emit a terminal result, preventing command cards from remaining stuck in “Running”.
-- **Stronger platform packages.** macOS, Windows, and Linux builds validate and prune architecture-specific native binaries before the installer is created.
+- **Windows stability overhaul.** The embedded runtime now ships its complete AI acceleration libraries, resolving an issue where sending a message could disconnect the session on Windows. Chats, new sessions, and restarts are dependable again.
+- **Self-healing runtime.** If the internal service is ever interrupted, Onevium recovers automatically within seconds and keeps your place instead of leaving a blank window — and runtime health is recorded locally for fast support diagnosis.
+- **Instant sign-in.** The startup license check completes within seconds even on restricted networks, with a seamless offline fallback.
+- **Safer updates on Windows.** Installing an update shuts the app down cleanly before replacing files, eliminating post-update glitches.
+- **Long-running tools stay connected.** Legitimate scripts keep their activity heartbeat and are not killed by a blanket timeout; failed tool hooks finish cleanly instead of hanging in “Running”.
+- **Stronger platform packages.** Every build now hard-verifies its complete set of architecture-specific native libraries before an installer can be produced.
 
 > ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
 
