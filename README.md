@@ -32,7 +32,21 @@
 
 ## What's New
 
-### v1.1.21 — Rock-solid on Windows
+### v1.1.22 — Voice dictation and managed services
+
+- **Voice dictation, fully on-device.** Tap the microphone (or press ⇧⌘D / Ctrl+Shift+D) and speak. Transcription runs locally with an offline engine — audio never leaves your machine. A floating preview shows what's being heard, and the text lands at the cursor the moment you stop.
+- **AI polish for transcripts.** An optional cleanup pass fixes homophones and punctuation (highly recommended for Chinese), using any model from any configured provider. If polishing fails or times out, the raw transcript is used as-is — nothing you said is ever lost.
+- **Dictation history.** Every recording and transcript is kept under Settings › Voice, with one-click access to the recordings folder.
+- **Managed services.** The agent can start dev servers, databases, and APIs as first-class services with a real PID, OS-level port detection, TCP readiness probes, and live health in the Activity Panel — surviving across turns and app restarts.
+- **Stop / restart from the panel.** Each managed service row has its own stop and restart buttons, so you control processes without spending a chat turn. Logs are capped automatically.
+- **Channel bots with context.** DingTalk and Feishu bots can read recent group messages, so replies take the conversation into account. DingTalk bots can also list members, fetch shared files, and scheduled pushes support real @mentions.
+- **Claude Fable 5.1 on day one.** Available in the model picker, with Fable 5 marked as Legacy; Claude Agent SDK 0.3.251 under the hood.
+- **Activity Panel you can trust.** TCP-level liveness probing, honest stopped / failed / stale states, plain-language tool descriptions, and long tool output in a floating overlay.
+
+> ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.21 — Rock-solid on Windows</summary>
 
 - **Windows stability overhaul.** The embedded runtime now ships its complete AI acceleration libraries, resolving an issue where sending a message could disconnect the session on Windows. Chats, new sessions, and restarts are dependable again.
 - **Self-healing runtime.** If the internal service is ever interrupted, Onevium recovers automatically within seconds and keeps your place instead of leaving a blank window — and runtime health is recorded locally for fast support diagnosis.
@@ -41,7 +55,7 @@
 - **Long-running tools stay connected.** Legitimate scripts keep their activity heartbeat and are not killed by a blanket timeout; failed tool hooks finish cleanly instead of hanging in “Running”.
 - **Stronger platform packages.** Every build now hard-verifies its complete set of architecture-specific native libraries before an installer can be produced.
 
-> ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.19 — Goal mode, editable canvases, and a more reliable built-in browser</summary>
