@@ -32,7 +32,23 @@
 
 ## What's New
 
-### v1.1.22 — Voice dictation and managed services
+### v1.1.23 — Agent browser control, teams, and sessions that talk to each other
+
+- **Agent browser control.** 17 `browser_*` tools let the agent open pages, snapshot them, click, type, press keys, select, hover, scroll, wait on conditions, read values, and run page scripts across multiple persistent tabs with viewport presets. Risk-graded permission cards explain each action in plain language, and `browser_batch` runs up to ten steps in one call.
+- **Team cockpit.** Start a team from the `@Team` launcher: the lead plans members with file ownership and acceptance criteria, spawns one real child session per member, and a live cockpit card tracks every member's stage, status, and cost.
+- **Sessions that delegate and report.** Create child or peer sessions with their own model, permission profile, and effort; children report back automatically when their turn ends, and the sidebar nests them under their parent.
+- **Cross-session messaging.** Send a message to any other session through a send card with delivery status — steered live into a running turn, or queued until it ends.
+- **Delegated turns stream live.** Child, team, and scheduled-task turns stream inline into the conversation while they run, with Stop preserved.
+- **WeChat channel.** Connect a WeChat bot via QR code alongside DingTalk, Feishu, and Discord, with command events, chat naming, media delivery, and automatic reconnect.
+- **Integrations API & Webhooks.** External agents and services talk to Onevium through built-in or self-hosted business APIs and webhooks, with persistent bindings and session isolation.
+- **Subagent tab and agent cards.** Every background agent gets its own inspector tab with live text, tool inputs, and elapsed time; agent tool rows become clickable cards with real progress.
+- **Review, faster.** Annotate diff lines and send notes straight to the agent; floating change / file navigation, Codex-style gutter, and Monaco overlays kept off the scroll path so large diffs scroll smoothly.
+- **Reply annotations, local file chips, native Mermaid.** Attach notes to highlighted reply text; drop a local file to insert an `@path` chip instead of uploading a copy; complex diagrams render natively from a Mermaid fence.
+
+> ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
+
+<details>
+<summary>v1.1.22 — Voice dictation and managed services</summary>
 
 - **Voice dictation, fully on-device.** Tap the microphone (or press ⇧⌘D / Ctrl+Shift+D) and speak. Transcription runs locally with an offline engine — audio never leaves your machine. A floating preview shows what's being heard, and the text lands at the cursor the moment you stop.
 - **AI polish for transcripts.** An optional cleanup pass fixes homophones and punctuation (highly recommended for Chinese), using any model from any configured provider. If polishing fails or times out, the raw transcript is used as-is — nothing you said is ever lost.
@@ -43,7 +59,7 @@
 - **Claude Fable 5.1 on day one.** Available in the model picker, with Fable 5 marked as Legacy; Claude Agent SDK 0.3.251 under the hood.
 - **Activity Panel you can trust.** TCP-level liveness probing, honest stopped / failed / stale states, plain-language tool descriptions, and long tool output in a floating overlay.
 
-> ⚠️ On macOS, manual download remains recommended because older ad-hoc-signed builds may not complete automatic updates. Download the installer below and reinstall over the existing app.
+</details>
 
 <details>
 <summary>v1.1.21 — Rock-solid on Windows</summary>
