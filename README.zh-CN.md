@@ -6,9 +6,9 @@
 
 把对话、浏览器、图表与项目放在一起。从提出问题，到看见结果。
 
-**1.2.0 · 一次围绕日常工作的界面大更新**
+**1.2.1 · 更流畅的启动、会话整理与 Claude Code 插件**
 
-[下载当前版本](https://github.com/Onevium/Onevium/releases/latest) · [了解 1.2.0](releases/1.2.0.zh-CN.md) · [使用文档](https://onevium.com/zh/docs) · [English](README.md)
+[下载当前版本](https://github.com/Onevium/Onevium/releases/latest) · [了解 1.2.1](releases/1.2.1.zh-CN.md) · [使用文档](https://onevium.com/zh/docs) · [English](README.md)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 **说清楚想法，在旁边看见它。** 修改页面、查看预览、继续讨论，围绕同一个项目展开。
 
-> 图片使用模拟数据，报表与渠道连接状态均为示例。
+> 图片展示 1.2.0 工作区，使用模拟数据，报表与渠道连接状态均为示例。本次变化请查看 1.2.1 说明。
 
 ## 更有自己的样子，也更适合长时间使用
 

@@ -6,9 +6,9 @@
 
 Conversations, browser previews, charts, and projects. From a question to a result you can see.
 
-**1.2.0 · A major interface update for everyday work**
+**1.2.1 · A smoother start, conversation organization, and Claude Code plugins**
 
-[Download 1.2.0](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.0](releases/1.2.0.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
+[Download 1.2.1](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.1](releases/1.2.1.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
 
 </div>
 
@@ -16,7 +16,7 @@ Conversations, browser previews, charts, and projects. From a question to a resu
 
 **Describe the idea. See it take shape beside you.** Refine a page, inspect the preview, and keep the conversation in the context of your project.
 
-> Screens use synthetic demonstration data. Reports and connection states are illustrative.
+> Screens show the 1.2.0 workspace with synthetic demonstration data. Reports and connection states are illustrative. See the 1.2.1 notes for this update.
 
 ## A workspace that feels like yours
 
