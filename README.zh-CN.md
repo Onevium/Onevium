@@ -6,9 +6,9 @@
 
 把对话、浏览器、图表与项目放在一起。从提出问题，到看见结果。
 
-**1.2.1 · 更流畅的启动、会话整理与 Claude Code 插件**
+**1.2.2 · 会话内编辑文件、延续后台工作，更细致地控制 MCP 工具**
 
-[下载当前版本](https://github.com/Onevium/Onevium/releases/latest) · [了解 1.2.1](releases/1.2.1.zh-CN.md) · [使用文档](https://onevium.com/zh/docs) · [English](README.md)
+[下载 1.2.2](https://github.com/Onevium/Onevium/releases/latest) · [了解 1.2.2](releases/1.2.2.zh-CN.md) · [使用文档](https://onevium.com/zh/docs) · [English](README.md)
 
 </div>
 
@@ -16,7 +16,16 @@
 
 **说清楚想法，在旁边看见它。** 修改页面、查看预览、继续讨论，围绕同一个项目展开。
 
-> 图片展示 1.2.0 工作区，使用模拟数据，报表与渠道连接状态均为示例。本次变化请查看 1.2.1 说明。
+> 图片展示 1.2.0 工作区，使用模拟数据，报表与渠道连接状态均为示例。最新变化请查看 1.2.2 说明。
+
+## 1.2.2 更新
+
+- **在会话旁处理文件。** 打开本机文件引用，编辑 Markdown、文本和 CSV，并预览 PDF、Word、PowerPoint 和 Excel 文件。
+- **后台工作持续进行。** 主会话中断后，后台任务和子会话仍可继续，子会话按父会话归组。
+- **为任务选择合适的工具。** 按全局、项目或会话范围控制 MCP 的启停、工具白名单和按需加载。
+- **更新模型与操作体验。** 可选目录新增 Grok 4.7、Claude Opus 5.5、GPT-6 Sol/Luna，并改进浏览器表单操作与多仓库 Review。
+
+[阅读 1.2.2 更新日志 →](releases/1.2.2.zh-CN.md)
 
 ## 更有自己的样子，也更适合长时间使用
 
@@ -62,7 +71,7 @@
 | macOS | Apple Silicon / Intel | DMG |
 | Windows | x64 | EXE |
 
-升级方法与已知限制，请阅读所下载版本的发布说明。
+安装与更新步骤请参阅[安装指南](https://onevium.com/zh/docs/installation)。
 
 ## 技能社区与学习资源
 

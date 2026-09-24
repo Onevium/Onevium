@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.2.2
+
+File editing and document previews, persistent background work, child conversation grouping, scoped MCP controls, updated optional model presets, and improvements to browser control and multi-repository Review.
+
+文件编辑与文档预览、持续后台工作、子会话归组、分范围 MCP 控制、可选模型目录更新，以及浏览器控制与多仓库 Review 改进。
+
+[English notes](releases/1.2.2.md) · [中文说明](releases/1.2.2.zh-CN.md)
+
 ## 1.2.1
 
 Theme-aware startup and sign-in, conversation markers and title organization, voice correction vocabulary, browser controls, and Claude Code plugin marketplaces. Includes changed optional-tool defaults.

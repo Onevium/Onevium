@@ -6,9 +6,9 @@
 
 Conversations, browser previews, charts, and projects. From a question to a result you can see.
 
-**1.2.1 · A smoother start, conversation organization, and Claude Code plugins**
+**1.2.2 · Edit files, keep background work moving, and control MCP tools**
 
-[Download 1.2.1](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.1](releases/1.2.1.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
+[Download 1.2.2](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.2](releases/1.2.2.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
 
 </div>
 
@@ -16,7 +16,16 @@ Conversations, browser previews, charts, and projects. From a question to a resu
 
 **Describe the idea. See it take shape beside you.** Refine a page, inspect the preview, and keep the conversation in the context of your project.
 
-> Screens show the 1.2.0 workspace with synthetic demonstration data. Reports and connection states are illustrative. See the 1.2.1 notes for this update.
+> Screens show the 1.2.0 workspace with synthetic demonstration data. Reports and connection states are illustrative. See the 1.2.2 notes for the latest changes.
+
+## New in 1.2.2
+
+- **Work with files beside the conversation.** Open local file references, edit Markdown, text, and CSV, and preview PDF, Word, PowerPoint, and Excel files.
+- **Keep delegated work moving.** Background tasks and child conversations can continue after the main conversation is interrupted; child conversations stay grouped with their parent.
+- **Choose the tools a task needs.** Control MCP availability, tool allowlists, and on-demand loading by global, project, or conversation scope.
+- **Use updated models and clearer controls.** Optional Grok 4.7, Claude Opus 5.5, and GPT-6 Sol/Luna entries join the catalog, with browser form handling and multi-repository Review improvements.
+
+[Read the 1.2.2 changelog →](releases/1.2.2.md)
 
 ## A workspace that feels like yours
 
@@ -66,7 +75,7 @@ Organize development, operations, and research by project. Recognize conversatio
 | macOS | Apple Silicon / Intel | DMG |
 | Windows | x64 | EXE |
 
-Read the selected release's notes for upgrade instructions and known limitations.
+See the [installation guide](https://onevium.com/docs/installation) for setup and update instructions.
 
 ## Skills community and learning resources
 
