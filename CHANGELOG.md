@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.2.3
+
+Per-request file change cards with preview and restore, a dedicated window for opening local files, smoother chat status and screenshots, clearer browser settings, and reliability fixes for usage records and channels.
+
+每次请求的文件改动卡片（预览与恢复）、打开本地文件的独立窗口、更顺滑的聊天状态与截图显示、更清楚的浏览器设置，以及用量记录与频道的稳定性修复。
+
+[English notes](releases/1.2.3.md) · [中文说明](releases/1.2.3.zh-CN.md)
+
 ## 1.2.2
 
 File editing and document previews, persistent background work, child conversation grouping, scoped MCP controls, updated optional model presets, and improvements to browser control and multi-repository Review.

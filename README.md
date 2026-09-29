@@ -6,9 +6,9 @@
 
 Conversations, browser previews, charts, and projects. From a question to a result you can see.
 
-**1.2.2 · Edit files, keep background work moving, and control MCP tools**
+**1.2.3 · See each request's file changes and open files in their own window**
 
-[Download 1.2.2](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.2](releases/1.2.2.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
+[Download 1.2.3](https://github.com/Onevium/Onevium/releases/latest) · [Explore 1.2.3](releases/1.2.3.md) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
 
 </div>
 
@@ -16,16 +16,16 @@ Conversations, browser previews, charts, and projects. From a question to a resu
 
 **Describe the idea. See it take shape beside you.** Refine a page, inspect the preview, and keep the conversation in the context of your project.
 
-> Screens show the 1.2.0 workspace with synthetic demonstration data. Reports and connection states are illustrative. See the 1.2.2 notes for the latest changes.
+> Screens show the 1.2.0 workspace with synthetic demonstration data. Reports and connection states are illustrative. See the 1.2.3 notes for the latest changes.
 
-## New in 1.2.2
+## New in 1.2.3
 
-- **Work with files beside the conversation.** Open local file references, edit Markdown, text, and CSV, and preview PDF, Word, PowerPoint, and Excel files.
-- **Keep delegated work moving.** Background tasks and child conversations can continue after the main conversation is interrupted; child conversations stay grouped with their parent.
-- **Choose the tools a task needs.** Control MCP availability, tool allowlists, and on-demand loading by global, project, or conversation scope.
-- **Use updated models and clearer controls.** Optional Grok 4.7, Claude Opus 5.5, and GPT-6 Sol/Luna entries join the catalog, with browser form handling and multi-repository Review improvements.
+- **See what each request changed.** Every reply lists the files it edited, with live previews, safe restore, and a direct path into Review.
+- **Open local files in their own window.** Set Onevium as an "Open With" choice to edit Markdown, text, CSV, and code, or preview PDF, Office documents, images, video, and audio.
+- **A calmer conversation.** Tool actions and the streaming status update without flashing, sent screenshots appear immediately, and sub-agents fold into one line of avatars.
+- **Clearer settings and steadier sessions.** Browser options say what they control, usage records for resumed turns are corrected, and channels reconnect after a restart.
 
-[Read the 1.2.2 changelog →](releases/1.2.2.md)
+[Read the 1.2.3 changelog →](releases/1.2.3.md)
 
 ## A workspace that feels like yours
 
