@@ -14,9 +14,9 @@
 
 </div>
 
-![Onevium 1.2.4 研发工作台预览：项目会话、任务讨论与网页成果在同一界面中展示](assets/workspace-1.2.4.png)
+![Onevium 1.3.0 研发工作台：项目会话、任务讨论与网页成果在同一界面中展示](assets/workspace-1.2.4.png)
 
-> **1.3.0 功能预览。** 本页介绍正在准备的新版本。当前公开稳定版为 **1.2.3**；下方安装命令下载最新稳定版，不会安装尚未发布的 1.3.0。截图拍摄于 1.2.4 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
+> **Onevium 1.3.0 已发布。** 请阅读[新功能与升级须知](releases/1.3.0.zh-CN.md)。截图拍摄于 1.3.0 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
 
 ## 快速安装
 
@@ -38,9 +38,9 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 
 | 系统 | 当前稳定版安装包 |
 | --- | --- |
-| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-1.2.3-arm64.dmg) |
-| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-1.2.3-x64.dmg) |
-| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-Setup-1.2.3.exe) |
+| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-arm64.dmg) |
+| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-x64.dmg) |
+| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-Setup-1.3.0.exe) |
 
 当前稳定版没有 Linux 或 Windows arm64 安装包。[查看脚本、指定版本与安装说明](install/README.md) · [系统兼容性与签名说明](https://onevium.com/zh/docs/installation)
 
@@ -52,8 +52,8 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 | --- | --- |
 | **做一个产品页面** | 围绕项目讨论需求，编辑文件，打开网页预览，在 Review 中逐项检查改动。 |
 | **整理一份数据报告** | 读取文件、分析数据，把摘要和图表放在一起，再追问下一步行动。 |
-| **尝试不同方案** | 在 1.3.0 中从已有回复分支出新会话；开发任务也能放进独立 Git 工作树。 |
-| **创作和修改图片** | 在 1.3.0 中连接图像服务，从描述或参考图开始生成，再圈选区域、添加批注，告诉 AI 继续修改哪里。 |
+| **尝试不同方案** | 从已有回复分支出新会话；开发任务也能放进独立 Git 工作树。 |
+| **创作和修改图片** | 连接图像服务，从描述或参考图开始生成，再圈选区域、添加批注，告诉 AI 继续修改哪里。 |
 | **接续日常工作** | 用项目保存上下文，用 Skills 复用流程，用定时任务安排下一次执行。 |
 
 ## 1.3.0：更自由地组织工作
@@ -94,7 +94,7 @@ macOS 还支持从 Chrome、Edge、Brave 导入 Cookie 和已保存密码，并�
 
 从一份小表格开始，让摘要、趋势和渠道对比出现在同一工作台。看到依据，再继续讨论判断。
 
-![Onevium 1.2.4 报告工作台预览：模拟店铺周报、收入趋势和渠道占比](assets/report-1.2.4.png)
+![Onevium 1.3.0 报告工作台：模拟店铺周报、收入趋势和渠道占比](assets/report-1.2.4.png)
 
 *图中的销售额、订单、渠道和结论均为模拟示例，不对应真实店铺。*
 
@@ -112,7 +112,7 @@ macOS 还支持从 Chrome、Edge、Brave 导入 Cookie 和已保存密码，并�
 
 暖纸、浅色、Nord、Catppuccin——让侧栏、对话与预览保持协调。下面展示同一份模拟报告在四种内置主题下的样子。
 
-![Onevium 1.2.4 的暖纸、浅色、Nord 和 Catppuccin 四种内置主题](assets/themes-1.2.4.png)
+![Onevium 1.3.0 的暖纸、浅色、Nord 和 Catppuccin 四种内置主题](assets/themes-1.2.4.png)
 
 ## 第一次打开，试着完成一件小事
 
@@ -127,4 +127,4 @@ macOS 还支持从 Chrome、Edge、Brave 导入 Cookie 和已保存密码，并�
 
 [官网](https://onevium.com) · [完整文档](https://onevium.com/zh/docs) · [版本记录](CHANGELOG.md) · [问题反馈](https://github.com/Onevium/Onevium/issues) · support@onevium.com
 
-本仓库提供 Onevium 的产品介绍、演示素材、公开安装辅助脚本和 Release 安装包，不包含应用源码。1.3.0 预览内容可能继续调整；已发布版本的具体变化请查看[发布记录](https://github.com/Onevium/Onevium/releases)。
+本仓库提供 Onevium 的产品介绍、演示素材、公开安装辅助脚本和 Release 安装包，不包含应用源码。各已发布版本的具体变化请查看[发布记录](https://github.com/Onevium/Onevium/releases)。

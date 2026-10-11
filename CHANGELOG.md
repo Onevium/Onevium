@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.3.0
+
+A redesigned workspace, Git worktrees, rewind and branching from any reply, separate browser identities with saved passwords, image generation and editing in the conversation, usage insights, and per-category notifications. Upgrading is one-way; see the notes before you update.
+
+全新工作区、Git 工作树、从任意回复撤回或分支、浏览器独立身份与已保存密码、会话内图片生成与修改、用量洞察，以及按类别设置的通知。升级后不可降级，更新前请先阅读说明。
+
+[English notes](releases/1.3.0.md) · [中文说明](releases/1.3.0.zh-CN.md)
+
 ## 1.2.3
 
 Per-request file change cards with preview and restore, a dedicated window for opening local files, smoother chat status and screenshots, clearer browser settings, and reliability fixes for usage records and channels.

@@ -14,9 +14,9 @@ A project-based AI workspace. Write code, browse the web, create images, and wor
 
 </div>
 
-![Onevium 1.2.4 development workspace preview with project conversations, a task discussion, and a web preview together](assets/workspace-1.2.4.png)
+![Onevium 1.3.0 workspace with project conversations, a task discussion, and a web preview together](assets/workspace-1.2.4.png)
 
-> **A preview of 1.3.0.** This page introduces the upcoming version. The current public stable release is **1.2.3**; the commands below download the latest stable release, not the unpublished 1.3.0. Screenshots were captured during 1.2.4 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
+> **Onevium 1.3.0 is available.** Read [what's new and what changes when you upgrade](releases/1.3.0.md). Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
 
 ## Quick install
 
@@ -38,9 +38,9 @@ This saves and runs the helper under your existing execution policy, verifies th
 
 | Platform | Current stable installer |
 | --- | --- |
-| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-1.2.3-arm64.dmg) |
-| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-1.2.3-x64.dmg) |
-| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.2.3/Onevium-Setup-1.2.3.exe) |
+| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-arm64.dmg) |
+| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-x64.dmg) |
+| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-Setup-1.3.0.exe) |
 
 The current stable release has no Linux or Windows arm64 installer. [Inspect the helpers, choose a version, and read installation details](install/README.md) · [Compatibility and signing notes](https://onevium.com/docs/installation)
 
@@ -52,8 +52,8 @@ Keep the conversation, web pages, files, and previews for a task in one project.
 | --- | --- |
 | **Build a product page** | Discuss requirements in the project, edit files, open a web preview, and inspect the changes in Review. |
 | **Prepare a data report** | Work with files, analyze the data, put the summary beside its charts, and ask what to do next. |
-| **Explore another approach** | In 1.3.0, branch a new conversation from an existing reply; use a separate Git worktree for development tasks. |
-| **Create and edit images** | In 1.3.0, connect an image service, start with a prompt or reference, then mark regions and add notes to guide the next edit. |
+| **Explore another approach** | Branch a new conversation from an existing reply; use a separate Git worktree for development tasks. |
+| **Create and edit images** | Connect an image service, start with a prompt or reference, then mark regions and add notes to guide the next edit. |
 | **Continue everyday work** | Keep context in projects, reuse processes with Skills, and schedule the next run. |
 
 ## In 1.3.0: more ways to arrange your work
@@ -94,7 +94,7 @@ Image creation needs a separately configured image service and its tools enabled
 
 Start with a small table. Put the summary, trend, and channel comparison in the same workspace, then discuss what the evidence means.
 
-![Onevium 1.2.4 reporting workspace preview with a synthetic store report, revenue trend, and channel comparison](assets/report-1.2.4.png)
+![Onevium 1.3.0 reporting workspace with a synthetic store report, revenue trend, and channel comparison](assets/report-1.2.4.png)
 
 *Sales, orders, channels, and conclusions in this example are synthetic. No live store is shown.*
 
@@ -112,7 +112,7 @@ Start with a small table. Put the summary, trend, and channel comparison in the 
 
 Warm paper, Neutral light, Nord, or Catppuccin: keep the sidebar, conversation, and preview in tune. Here is the same synthetic report in four built-in palettes.
 
-![Onevium 1.2.4 in Warm paper, Neutral light, Nord, and Catppuccin themes](assets/themes-1.2.4.png)
+![Onevium 1.3.0 in Warm paper, Neutral light, Nord, and Catppuccin themes](assets/themes-1.2.4.png)
 
 ## Open it. Finish one small task.
 
@@ -127,4 +127,4 @@ Warm paper, Neutral light, Nord, or Catppuccin: keep the sidebar, conversation, 
 
 [Website](https://onevium.com) · [Documentation](https://onevium.com/docs) · [Changelog](CHANGELOG.md) · [Feedback](https://github.com/Onevium/Onevium/issues) · support@onevium.com
 
-This repository contains product information, demo assets, public installation helpers, and Release installers. It does not contain the application's source code. The 1.3.0 preview may change; see [Releases](https://github.com/Onevium/Onevium/releases) for the changes in published versions.
+This repository contains product information, demo assets, public installation helpers, and Release installers. It does not contain the application's source code. See [Releases](https://github.com/Onevium/Onevium/releases) for the changes in each published version.
