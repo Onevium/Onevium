@@ -16,7 +16,7 @@ A project-based AI workspace. Write code, browse the web, create images, and wor
 
 ![Onevium 1.3.0 workspace with project conversations, a task discussion, and a web preview together](assets/workspace-1.2.4.png)
 
-> **Onevium 1.3.0 is available.** Read [what's new and what changes when you upgrade](releases/1.3.0.md). Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
+> **Onevium 1.3.1 is available.** Read [what's new and what changes when you upgrade](releases/1.3.1.md). Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
 
 ## Quick install
 
@@ -38,9 +38,9 @@ This saves and runs the helper under your existing execution policy, verifies th
 
 | Platform | Current stable installer |
 | --- | --- |
-| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-arm64.dmg) |
-| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-x64.dmg) |
-| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-Setup-1.3.0.exe) |
+| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-arm64.dmg) |
+| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-x64.dmg) |
+| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-Setup-1.3.1.exe) |
 
 The current stable release has no Linux or Windows arm64 installer. [Inspect the helpers, choose a version, and read installation details](install/README.md) · [Compatibility and signing notes](https://onevium.com/docs/installation)
 
@@ -53,10 +53,38 @@ Keep the conversation, web pages, files, and previews for a task in one project.
 | **Build a product page** | Discuss requirements in the project, edit files, open a web preview, and inspect the changes in Review. |
 | **Prepare a data report** | Work with files, analyze the data, put the summary beside its charts, and ask what to do next. |
 | **Explore another approach** | Branch a new conversation from an existing reply; use a separate Git worktree for development tasks. |
-| **Create and edit images** | Connect an image service, start with a prompt or reference, then mark regions and add notes to guide the next edit. |
+| **Create and edit images** | Connect an image service, start from a template, prompt, or reference on the Images page, then mark regions and add notes to guide the next edit. |
+| **Check a server or a database** | Save the host or connection in Secrets and hosts, then let AI run the commands you approve, without pasting passwords into the conversation. |
 | **Continue everyday work** | Keep context in projects, reuse processes with Skills, and schedule the next run. |
 
-## In 1.3.0: more ways to arrange your work
+## In 1.3.1: secrets, servers, and a home for images
+
+### Let AI use saved credentials by reference
+
+Keep server, database, API, and cloud credentials in Settings → Secrets and hosts, encrypted with your system keychain. The AI refers to an item by name; Onevium fills in the value on your computer when a command runs, masks known secret values in output, and follows your approval settings. Bring in values from existing config files and CLI accounts without retyping them, and store one-time code seeds so codes are filled in for you.
+
+AI use is off until you turn it on. Approval settings include time-limited grants and optional periods without prompts; ordinary unanswered requests default to allowing one use after two minutes, which you can change to deny. Credential files such as SSH private keys and cloud CLI configs are protected too: the AI has to ask on your computer before reading them.
+
+### Work on your servers over SSH
+
+Add a server or import it from `~/.ssh/config`, check its fingerprint on the first connection, and let the AI run commands or read and write files there. Approve once, for a few minutes, or for the whole session, and stop at any time; locking the screen ends every approval.
+
+### Images get their own page
+
+Open Images in the navigation rail to start from a template or a style, choose the service, aspect ratio, resolution, and number of images, and keep every result in My work. When you want a change, continue the original conversation beside the image.
+
+Image creation needs a separately configured image service.
+
+[Image creation and canvas](https://onevium.com/docs/image-creation)
+
+### Replies that read more smoothly
+
+Curtain reveal now uncovers text word by word, cards ease in as they arrive, and a finished reply stays in place when its steps fold. Switching conversations shows them in one step.
+
+[Everything new in 1.3.1](releases/1.3.1.md)
+
+<details>
+<summary><strong>In 1.3.0: more ways to arrange your work</strong></summary>
 
 ### A workspace that follows the task
 
@@ -86,7 +114,9 @@ Connect a supported OpenAI or Google Gemini image service and bring prompts, ref
 
 Image creation needs a separately configured image service and its tools enabled. Available models and costs depend on the connected service.
 
-[Image creation and canvas](https://onevium.com/docs/image-creation)
+[Image creation and canvas](https://onevium.com/docs/image-creation) · [1.3.0 release notes](releases/1.3.0.md)
+
+</details>
 
 ## Turn data into a useful conversation
 

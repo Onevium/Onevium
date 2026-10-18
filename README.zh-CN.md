@@ -16,7 +16,7 @@
 
 ![Onevium 1.3.0 研发工作台：项目会话、任务讨论与网页成果在同一界面中展示](assets/workspace-1.2.4.png)
 
-> **Onevium 1.3.0 已发布。** 请阅读[新功能与升级须知](releases/1.3.0.zh-CN.md)。截图拍摄于 1.3.0 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
+> **Onevium 1.3.1 已发布。** 请阅读[新功能与升级须知](releases/1.3.1.zh-CN.md)。截图拍摄于 1.3.0 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
 
 ## 快速安装
 
@@ -38,9 +38,9 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 
 | 系统 | 当前稳定版安装包 |
 | --- | --- |
-| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-arm64.dmg) |
-| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-1.3.0-x64.dmg) |
-| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.0/Onevium-Setup-1.3.0.exe) |
+| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-arm64.dmg) |
+| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-x64.dmg) |
+| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-Setup-1.3.1.exe) |
 
 当前稳定版没有 Linux 或 Windows arm64 安装包。[查看脚本、指定版本与安装说明](install/README.md) · [系统兼容性与签名说明](https://onevium.com/zh/docs/installation)
 
@@ -53,10 +53,38 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 | **做一个产品页面** | 围绕项目讨论需求，编辑文件，打开网页预览，在 Review 中逐项检查改动。 |
 | **整理一份数据报告** | 读取文件、分析数据，把摘要和图表放在一起，再追问下一步行动。 |
 | **尝试不同方案** | 从已有回复分支出新会话；开发任务也能放进独立 Git 工作树。 |
-| **创作和修改图片** | 连接图像服务，从描述或参考图开始生成，再圈选区域、添加批注，告诉 AI 继续修改哪里。 |
+| **创作和修改图片** | 连接图像服务，在图像页从模板、描述或参考图开始生成，再圈选区域、添加批注，告诉 AI 继续修改哪里。 |
+| **检查服务器或数据库** | 把主机或连接保存到「秘钥与主机」，让 AI 执行你批准的命令，密码不必贴进对话。 |
 | **接续日常工作** | 用项目保存上下文，用 Skills 复用流程，用定时任务安排下一次执行。 |
 
-## 1.3.0：更自由地组织工作
+## 1.3.1：秘钥、服务器和图片各得其所
+
+### 让 AI 按引用使用保存的凭据
+
+在「设置 → 秘钥与主机」中保存服务器、数据库、API 和云账号凭据，由系统钥匙串加密。AI 只按名称引用；命令运行时由 Onevium 在本机填入秘钥，遮蔽输出中的已知秘钥，并遵循你设置的授权范围。已有配置文件和 CLI 账号里的秘钥可以直接导入，不必重新输入；保存两步验证种子后，验证码也能自动填写。
+
+AI 使用默认关闭，需要时再开启。授权可设时限或免询问时段；普通请求默认在两分钟无人响应后允许一次，可在设置中改为拒绝。SSH 私钥、云服务 CLI 配置等凭据文件同样受保护：AI 读取前必须在本机征得你的同意。
+
+### 在 SSH 服务器上继续工作
+
+添加服务器或从 `~/.ssh/config` 导入，首次连接时核对指纹，然后让 AI 执行命令、读写文件。可以只授权一次、授权几分钟或整个会话，随时停止；锁屏后所有授权立即失效。
+
+### 图片有了自己的页面
+
+从导航栏打开「图像」，以模板或风格起步，选择图片服务、比例、分辨率和张数，所有结果都留在「我的作品」里。需要修改时，在图片旁接着原会话继续。
+
+图片创作需要单独配置图片服务。
+
+[图片生成与画布](https://onevium.com/zh/docs/image-creation)
+
+### 回复读起来更顺
+
+逐词揭幕效果改为逐词呈现，卡片平滑出现；回复完成、过程收起时画面保持不动；切换会话一次到位。
+
+[查看 1.3.1 全部更新](releases/1.3.1.zh-CN.md)
+
+<details>
+<summary><strong>1.3.0：更自由地组织工作</strong></summary>
 
 ### 工作台跟着任务走
 
@@ -86,7 +114,9 @@ macOS 还支持从 Chrome、Edge、Brave 导入 Cookie 和已保存密码，并�
 
 图片创作需要单独配置图像服务，并启用对应工具；可用模型和费用由所连接的服务决定。
 
-[图片生成与画布](https://onevium.com/zh/docs/image-creation)
+[图片生成与画布](https://onevium.com/zh/docs/image-creation) · [1.3.0 发布说明](releases/1.3.0.zh-CN.md)
+
+</details>
 
 ## 让数据变成值得讨论的结果
 
