@@ -1,13 +1,5 @@
 # Release history / 版本记录
 
-## 1.3.1
-
-Secrets and SSH hosts the AI can use by reference within your approval settings, one-time codes, a dedicated Images page with templates and styles, auto-compact timing, smoother replies, and fixes for channel approvals, Windows startup, updates, and drafts. See the notes before you update.
-
-AI 按引用使用、按设置授权的秘钥库与 SSH 主机，两步验证码，带模板和风格的独立图像页，自动压缩时机，更顺滑的回复，以及渠道审批、Windows 启动、更新和草稿方面的修复。更新前请先阅读说明。
-
-[English notes](releases/1.3.1.md) · [中文说明](releases/1.3.1.zh-CN.md)
-
 ## 1.3.0
 
 A redesigned workspace, Git worktrees, rewind and branching from any reply, separate browser identities with saved passwords, image generation and editing in the conversation, usage insights, and per-category notifications. Upgrading is one-way; see the notes before you update.
