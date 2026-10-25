@@ -34,7 +34,7 @@ The helper detects your architecture, downloads the official stable installer, c
 $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/Onevium/Onevium/main/install/install.ps1' -OutFile $p -UseBasicParsing -ErrorAction Stop; & $p
 ```
 
-This saves and runs the helper under your existing execution policy, verifies the installer, and opens its setup wizard. The Windows command has not yet been tested on a Windows host; use a direct download if your policy blocks scripts.
+This saves and runs the helper under your existing execution policy, verifies the installer, and opens its setup wizard. If your policy blocks scripts, use a direct download.
 
 | Platform | Current stable installer |
 | --- | --- |

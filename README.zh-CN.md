@@ -34,7 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/Onevium/Onevium/main/install/instal
 $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/Onevium/Onevium/main/install/install.ps1' -OutFile $p -UseBasicParsing -ErrorAction Stop; & $p
 ```
 
-下载脚本后按系统现有策略运行，校验安装包并打开安装向导。Windows 命令尚未在 Windows 主机实测；若策略不允许运行脚本，可直接下载安装包。
+下载脚本后按系统现有策略运行，校验安装包并打开安装向导。若策略不允许运行脚本，可直接下载安装包。
 
 | 系统 | 当前稳定版安装包 |
 | --- | --- |

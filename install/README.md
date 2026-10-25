@@ -36,7 +36,7 @@ Read [install.ps1](install.ps1) before running if you want to inspect it. Once d
 & (Join-Path $env:TEMP 'onevium-install.ps1') -Version 1.3.2
 ```
 
-**Windows helper execution has not yet been verified on a Windows host.** The command is for Windows x64, not Windows ARM64, macOS, or Linux PowerShell. / **Windows 助手尚未在 Windows 主机实测。** 命令面向 Windows x64，不适用于 Windows ARM64 或 macOS、Linux 上的 PowerShell。
+The command is for Windows x64, not Windows ARM64, macOS, or Linux PowerShell. / 命令面向 Windows x64，不适用于 Windows ARM64 或 macOS、Linux 上的 PowerShell。
 
 ## Requirements and direct downloads / 使用条件与直接下载
 
