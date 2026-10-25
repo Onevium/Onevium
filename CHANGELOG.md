@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.3.2
+
+Evidence-backed memory with a single memory library and markers in answers, browser identities with their own sign-ins and network routes, a menu-bar hub, conversation notifications and Dock shortcuts, scheduled database backups, Qwen and Xiaomi MiMo presets, and fixes for sign-in, replies, and cookie import. On macOS this update is installed manually; see the notes before you update.
+
+有依据的记忆、统一的记忆库与回答中的记忆标记，拥有独立登录状态和网络线路的浏览器身份，菜单栏快捷中心，会话通知与 Dock 菜单，定时数据库备份，千问与小米 MiMo 预设，以及登录、回复和 Cookie 导入方面的修复。macOS 这一次需要手动安装，更新前请先阅读说明。
+
+[English notes](releases/1.3.2.md) · [中文说明](releases/1.3.2.zh-CN.md)
+
 ## 1.3.1
 
 Secrets and SSH hosts the AI can use by reference within your approval settings, one-time codes, a dedicated Images page with templates and styles, auto-compact timing, smoother replies, and fixes for channel approvals, Windows startup, updates, and drafts. See the notes before you update.

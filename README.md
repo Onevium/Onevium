@@ -16,7 +16,7 @@ A project-based AI workspace. Write code, browse the web, create images, and wor
 
 ![Onevium 1.3.0 workspace with project conversations, a task discussion, and a web preview together](assets/workspace-1.2.4.png)
 
-> **Onevium 1.3.1 is available.** Read [what's new and what changes when you upgrade](releases/1.3.1.md). Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
+> **Onevium 1.3.2 is available.** Read [what's new and what changes when you upgrade](releases/1.3.2.md); on macOS, install this update manually from the DMG. Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
 
 ## Quick install
 
@@ -38,9 +38,9 @@ This saves and runs the helper under your existing execution policy, verifies th
 
 | Platform | Current stable installer |
 | --- | --- |
-| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-arm64.dmg) |
-| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-x64.dmg) |
-| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-Setup-1.3.1.exe) |
+| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
+| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
+| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
 
 The current stable release has no Linux or Windows arm64 installer. [Inspect the helpers, choose a version, and read installation details](install/README.md) · [Compatibility and signing notes](https://onevium.com/docs/installation)
 
@@ -55,9 +55,41 @@ Keep the conversation, web pages, files, and previews for a task in one project.
 | **Explore another approach** | Branch a new conversation from an existing reply; use a separate Git worktree for development tasks. |
 | **Create and edit images** | Connect an image service, start from a template, prompt, or reference on the Images page, then mark regions and add notes to guide the next edit. |
 | **Check a server or a database** | Save the host or connection in Secrets and hosts, then let AI run the commands you approve, without pasting passwords into the conversation. |
+| **Use several accounts on one site** | Give each browser identity its own sign-ins and network route; AI asks first when it is unsure which identity to use. |
 | **Continue everyday work** | Keep context in projects, reuse processes with Skills, and schedule the next run. |
 
-## In 1.3.1: secrets, servers, and a home for images
+## In 1.3.2: memory you can trace, browser identities, and a menu-bar hub
+
+### Memories that show where they came from
+
+Memories are extracted only from what you said or confirmed. Each one shows its source conversation, evidence, and change history. Browse the memory library by space, see how a memory connects to others, and check how often it is used. When an answer uses a memory, it is marked; open the marker to see the evidence. Forgotten content is never recalled again.
+
+Memories from 1.3.1 are kept. The vector index is rebuilt in the background after the upgrade; keyword recall keeps working meanwhile.
+
+[Memory and recap](https://onevium.com/docs/memory-and-recap)
+
+### Browser identities with their own network routes
+
+Save several identities in the built-in browser, each with its own cookies, sign-ins, and network route (HTTP, HTTPS, or SOCKS5). New tabs remember the identity per conversation. Site permission requests appear as bubbles, and signing in offers to save the password. Manage routes in Settings → Network.
+
+[Browser guide](https://onevium.com/docs/browser-automation)
+
+### A hub in the menu bar
+
+Open the hub from the macOS menu bar (the system tray on Windows) to see conversations waiting for you, running, and recent, plus usage for today and the last seven days. Search and copy one-time codes and passwords from your secrets, or generate a password. Conversations also send system notifications when they finish, need confirmation, or fail.
+
+### Qwen and Xiaomi MiMo
+
+New presets for Alibaba Cloud Qwen (China, International, and Coding Plan) and Xiaomi MiMo (including Token Plan), with every provider's models synced as of 2026-10-25.
+
+[Connection guide](https://onevium.com/docs/providers) · [Everything new in 1.3.2](releases/1.3.2.md)
+
+### Before you upgrade
+
+The first launch backs up and verifies your data before upgrading it, and 1.3.1 cannot read the upgraded data. On macOS, install 1.3.2 manually from the DMG; from 1.3.2 on, a stable signature lets later versions update in the app. Grant screen recording, microphone, and input monitoring once more after this update, and choose Always Allow when Keychain asks for your password on the first launch of each new version. [Install and update Onevium](https://onevium.com/docs/installation#updates)
+
+<details>
+<summary><strong>In 1.3.1: secrets, servers, and a home for images</strong></summary>
 
 ### Let AI use saved credentials by reference
 
@@ -81,7 +113,9 @@ Image creation needs a separately configured image service.
 
 Curtain reveal now uncovers text word by word, cards ease in as they arrive, and a finished reply stays in place when its steps fold. Switching conversations shows them in one step.
 
-[Everything new in 1.3.1](releases/1.3.1.md)
+[1.3.1 release notes](releases/1.3.1.md)
+
+</details>
 
 <details>
 <summary><strong>In 1.3.0: more ways to arrange your work</strong></summary>

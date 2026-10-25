@@ -16,7 +16,7 @@
 
 ![Onevium 1.3.0 研发工作台：项目会话、任务讨论与网页成果在同一界面中展示](assets/workspace-1.2.4.png)
 
-> **Onevium 1.3.1 已发布。** 请阅读[新功能与升级须知](releases/1.3.1.zh-CN.md)。截图拍摄于 1.3.0 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
+> **Onevium 1.3.2 已发布。** 请阅读[新功能与升级须知](releases/1.3.2.zh-CN.md)；macOS 这一次需要下载 DMG 手动安装。截图拍摄于 1.3.0 开发阶段，使用真实界面组件的隔离演示，项目、对话和报表均为模拟数据。
 
 ## 快速安装
 
@@ -38,9 +38,9 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 
 | 系统 | 当前稳定版安装包 |
 | --- | --- |
-| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-arm64.dmg) |
-| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-1.3.1-x64.dmg) |
-| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.1/Onevium-Setup-1.3.1.exe) |
+| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
+| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
+| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
 
 当前稳定版没有 Linux 或 Windows arm64 安装包。[查看脚本、指定版本与安装说明](install/README.md) · [系统兼容性与签名说明](https://onevium.com/zh/docs/installation)
 
@@ -55,9 +55,41 @@ $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.g
 | **尝试不同方案** | 从已有回复分支出新会话；开发任务也能放进独立 Git 工作树。 |
 | **创作和修改图片** | 连接图像服务，在图像页从模板、描述或参考图开始生成，再圈选区域、添加批注，告诉 AI 继续修改哪里。 |
 | **检查服务器或数据库** | 把主机或连接保存到「秘钥与主机」，让 AI 执行你批准的命令，密码不必贴进对话。 |
+| **在同一网站使用多个账号** | 给内置浏览器的每个身份独立的登录状态和网络线路；AI 不确定该用哪个身份时会先问你。 |
 | **接续日常工作** | 用项目保存上下文，用 Skills 复用流程，用定时任务安排下一次执行。 |
 
-## 1.3.1：秘钥、服务器和图片各得其所
+## 1.3.2：有依据的记忆、浏览器身份与菜单栏快捷中心
+
+### 每条记忆都能看到来源
+
+记忆只从你说过的话和确认过的内容中提取，每条都能看到来源对话、依据和修改记录。在记忆库中按空间浏览，查看一条记忆和其他记忆的关联以及使用次数。回答用到记忆时会标出来，点开就能看到依据；遗忘的内容不会再被召回。
+
+1.3.1 的记忆全部保留。升级后向量索引会在后台重建，期间仍可按关键词召回。
+
+[记忆与回顾](https://onevium.com/zh/docs/memory-and-recap)
+
+### 浏览器身份各有网络线路
+
+内置浏览器可以保存多个身份，每个身份有独立的 Cookie、登录状态和网络线路（HTTP / HTTPS / SOCKS5）。新标签按会话记住所用身份；网站权限请求改为气泡提示，登录时会询问是否保存密码。线路在「设置 → 网络」中统一管理。
+
+[浏览器使用指南](https://onevium.com/zh/docs/browser-automation)
+
+### 菜单栏快捷中心
+
+从 macOS 菜单栏（Windows 托盘）打开快捷中心，查看等待确认、进行中和最近的会话，以及今天和近七天的用量；还可以搜索并复制秘钥库里的验证码和密码，或生成密码。会话完成、需要确认或出错时也会发送系统通知。
+
+### 千问与小米 MiMo
+
+新增阿里云千问（国内 / 国际 / Coding Plan）和小米 MiMo（含 Token Plan）预设，并同步 2026-10-25 各服务商的最新模型。
+
+[连接指南](https://onevium.com/zh/docs/providers) · [查看 1.3.2 全部更新](releases/1.3.2.zh-CN.md)
+
+### 升级前请了解
+
+首次启动会先备份并校验数据再升级，升级后 1.3.1 无法读取新数据。macOS 这一次需要下载 DMG 手动安装；从 1.3.2 起使用固定签名，以后的版本可以在应用内更新。更新后需要重新授予一次录屏、麦克风和输入监控权限；每个新版本首次启动时钥匙串会请求一次登录密码，请选择「始终允许」。[安装与更新 Onevium](https://onevium.com/zh/docs/installation#updates)
+
+<details>
+<summary><strong>1.3.1：秘钥、服务器和图片各得其所</strong></summary>
 
 ### 让 AI 按引用使用保存的凭据
 
@@ -81,7 +113,9 @@ AI 使用默认关闭，需要时再开启。授权可设时限或免询问时�
 
 逐词揭幕效果改为逐词呈现，卡片平滑出现；回复完成、过程收起时画面保持不动；切换会话一次到位。
 
-[查看 1.3.1 全部更新](releases/1.3.1.zh-CN.md)
+[1.3.1 发布说明](releases/1.3.1.zh-CN.md)
+
+</details>
 
 <details>
 <summary><strong>1.3.0：更自由地组织工作</strong></summary>
