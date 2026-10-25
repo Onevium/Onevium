@@ -62,7 +62,7 @@ Keep the conversation, web pages, files, and previews for a task in one project.
 
 ### Memories that show where they came from
 
-Memories are extracted only from what you said or confirmed. Each one shows its source conversation, evidence, and change history. Browse the memory library by space, see how a memory connects to others, and check how often it is used. When an answer uses a memory, it is marked; open the marker to see the evidence. Forgotten content is never recalled again.
+Memories are extracted only from what you said or confirmed. Each one shows its source conversation, evidence, and change history. All memories live in Settings → Personalization → Memory space, where you can see how a memory connects to others and check how often it is used. When an answer uses a memory, it is marked; open the marker to see the evidence. Forgotten content is never recalled again.
 
 Memories from 1.3.1 are kept. The vector index is rebuilt in the background after the upgrade; keyword recall keeps working meanwhile.
 
