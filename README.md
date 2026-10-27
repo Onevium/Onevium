@@ -1,194 +1,132 @@
 <div align="center">
 
-<img src="icon.png" alt="Onevium" width="104" />
+**简体中文** · [English](README.en.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
+
+<img src="icon.png" alt="Onevium" width="56" />
 
 # Onevium
 
-### Bring your ideas to life. Keep the results in view.
+### 本地优先，把 AI 接入你的工作。
 
-A project-based AI workspace. Write code, browse the web, create images, and work with files—with the conversation and its results together.
+**Local-first · 本地优先**的桌面 AI 工作台。把多模型、浏览器、文件与业务工具组织在同一项目中，写代码、查资料、做图片，边执行，边检查成果。
 
-**Projects & conversations · Browser · Files & Review · Image creation · Skills & automation**
+**[下载 Onevium](https://github.com/Onevium/Onevium/releases/latest)** · [开始使用](https://onevium.com/zh/docs/getting-started) · [最新变化](releases/1.3.2.zh-CN.md)
 
-[Download stable](https://github.com/Onevium/Onevium/releases/latest) · [Quick install](#quick-install) · [Documentation](https://onevium.com/docs) · [简体中文](README.zh-CN.md)
+macOS（Apple Silicon 与 Intel）· Windows x64
+
+关注 **[@Onevium](https://github.com/Onevium)**，了解产品更新和实际 AI 工作流。
 
 </div>
 
-![Onevium 1.3.0 workspace with project conversations, a task discussion, and a web preview together](assets/workspace-1.2.4.png)
+![Onevium 工作台：在项目对话旁边，直接查看正在制作的网页](assets/workspace-1.2.4.png)
 
-> **Onevium 1.3.2 is available.** Read [what's new and what changes when you upgrade](releases/1.3.2.md); on macOS, install this update manually from the DMG. Screenshots were captured during 1.3.0 development using real interface components in an isolated demo, with synthetic projects, conversations, and reports.
+*截图来自 1.3.0 开发阶段的隔离演示，使用真实界面组件；项目、对话和报表均为模拟数据。*
 
-## Quick install
+## 从个人项目，到企业日常
 
-**macOS · Apple Silicon / Intel** — paste this line into Terminal:
+Onevium 已在**客服、物流、跨境广告等行业的企业**中使用。把已有的模型服务、账号和业务工具连接起来，组合适合自己团队的工作流。
+
+## 支持你选择的模型与服务
+
+| 类型 | 支持的连接 |
+| --- | --- |
+| 国际模型服务 | Claude / Claude Code、OpenAI GPT、Google Gemini、xAI Grok |
+| 国内模型服务 | DeepSeek、智谱 GLM / z.ai、Kimi / Moonshot、MiniMax、阿里云千问 Qwen、小米 MiMo |
+| 自定义服务 | 按兼容接口接入自定义服务或团队模型网关，配置自己的地址、密钥与模型 ID |
+| 图片创作 | 单独连接 OpenAI 或 Google Gemini 图像服务 |
+
+在同一会话中按任务切换模型，也可以为协作队伍的不同成员选择模型。可用型号、工具能力与费用以连接的服务和账户权限为准。Onevium 账号与授权独立于模型服务权限。 [查看连接说明](https://onevium.com/zh/docs/providers)。
+
+**本地优先，服务自选。** 项目文件、会话与工作资料以本机工作环境为中心，凭据在本机加密保存。调用云端模型、图像服务或办公渠道时，相关内容会发送到你配置的服务。
+
+## 从一件你想完成的事开始
+
+| 你想做什么 | 在 Onevium 里怎么做 |
+| --- | --- |
+| **做一个网站，或修改现有项目** | 让 AI 编辑文件，在对话旁打开页面预览，再通过 Review 检查改动。想尝试另一种方案，也可以使用独立 Git 工作树。 |
+| **研究一个主题，或整理一份报告** | 围绕任务使用网页和文件，核对资料，把摘要、图表和讨论留在一起。[试试示例](examples/README.md)。 |
+| **创作一张图片，再继续修改** | 从描述、模板或参考图起步，圈选区域、添加批注，在图片旁继续调整。需要单独配置图片服务。 |
+
+<details>
+<summary><strong>看看报表示例和四种内置主题</strong></summary>
+
+![Onevium 报表工作台：模拟店铺报告、收入趋势与渠道比较](assets/report-1.2.4.png)
+
+销售额、订单、渠道和结论均为模拟，不代表连接了真实店铺。[查看示例](examples/README.md)。
+
+![同一份 Onevium 报告在 Warm paper、Neutral light、Nord 与 Catppuccin 四种主题中的展示](assets/themes-1.2.4.png)
+
+这些截图同样来自上文说明的 1.3.0 开发演示。
+
+</details>
+
+## 下载 Onevium
+
+**当前稳定版：1.3.2。** [查看更新内容与升级须知](releases/1.3.2.zh-CN.md)。
+
+| 系统 | 下载 |
+| --- | --- |
+| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
+| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
+| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
+
+**准备升级到 1.3.2？** macOS 用户需要先退出 Onevium，再通过 DMG 手动安装本次更新。首次启动会升级本地数据，1.3.1 无法直接读取升级后的数据。更新前请阅读[升级、签名与恢复说明](https://onevium.com/zh/docs/installation#updates)。
+
+当前稳定版没有 Linux 或 Windows arm64 安装包。安装后完成账号登录或授权激活，再连接可用的模型服务。[安装与系统兼容性](https://onevium.com/zh/docs/installation) · [企业与团队咨询](https://onevium.com/zh/pricing)。
+
+## 快速安装
+
+<details>
+<summary><strong>展开 macOS 与 Windows 安装命令</strong></summary>
+
+**macOS · Apple Silicon / Intel** — 打开终端，复制这一行：
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/Onevium/Onevium/main/install/install.sh -o onevium-install.sh && sh onevium-install.sh
 ```
 
-The helper detects your architecture, downloads the official stable installer, checks its SHA-256, and opens the installer. Drag Onevium into Applications to finish. Quit a running copy of Onevium before updating.
+自动识别芯片，下载官方稳定版安装包，核对 SHA-256，然后打开安装界面。将 Onevium 拖入「应用程序」即可完成安装；更新前先退出正在运行的 Onevium。
 
-**Windows x64** — run in PowerShell:
+**Windows x64** — 在 PowerShell 中运行：
 
 ```powershell
 $p = Join-Path $env:TEMP 'onevium-install.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/Onevium/Onevium/main/install/install.ps1' -OutFile $p -UseBasicParsing -ErrorAction Stop; & $p
 ```
 
-This saves and runs the helper under your existing execution policy, verifies the installer, and opens its setup wizard. If your policy blocks scripts, use a direct download.
+下载脚本后按系统现有策略运行，校验安装包并打开安装向导。若策略不允许运行脚本，可直接下载安装包。
 
-| Platform | Current stable installer |
-| --- | --- |
-| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
-| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
-| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
-
-The current stable release has no Linux or Windows arm64 installer. [Inspect the helpers, choose a version, and read installation details](install/README.md) · [Compatibility and signing notes](https://onevium.com/docs/installation)
-
-## From a question to something you can use
-
-Keep the conversation, web pages, files, and previews for a task in one project. Ask AI to do the work, inspect the result beside it, and continue with the next change.
-
-| What you want to do | How Onevium helps |
-| --- | --- |
-| **Build a product page** | Discuss requirements in the project, edit files, open a web preview, and inspect the changes in Review. |
-| **Prepare a data report** | Work with files, analyze the data, put the summary beside its charts, and ask what to do next. |
-| **Explore another approach** | Branch a new conversation from an existing reply; use a separate Git worktree for development tasks. |
-| **Create and edit images** | Connect an image service, start from a template, prompt, or reference on the Images page, then mark regions and add notes to guide the next edit. |
-| **Check a server or a database** | Save the host or connection in Secrets and hosts, then let AI run the commands you approve, without pasting passwords into the conversation. |
-| **Use several accounts on one site** | Give each browser identity its own sign-ins and network route; AI asks first when it is unsure which identity to use. |
-| **Continue everyday work** | Keep context in projects, reuse processes with Skills, and schedule the next run. |
-
-## In 1.3.2: memory you can trace, browser identities, and a menu-bar hub
-
-### Memories that show where they came from
-
-Memories are extracted only from what you said or confirmed. Each one shows its source conversation, evidence, and change history. All memories live in Settings → Personalization → Memory space, where you can see how a memory connects to others and check how often it is used. When an answer uses a memory, it is marked; open the marker to see the evidence. Forgotten content is never recalled again.
-
-Memories from 1.3.1 are kept. The vector index is rebuilt in the background after the upgrade; keyword recall keeps working meanwhile.
-
-[Memory and recap](https://onevium.com/docs/memory-and-recap)
-
-### Browser identities with their own network routes
-
-Save several identities in the built-in browser, each with its own cookies, sign-ins, and network route (HTTP, HTTPS, or SOCKS5). New tabs remember the identity per conversation. Site permission requests appear as bubbles, and signing in offers to save the password. Manage routes in Settings → Network.
-
-[Browser guide](https://onevium.com/docs/browser-automation)
-
-### A hub in the menu bar
-
-Open the hub from the macOS menu bar (the system tray on Windows) to see conversations waiting for you, running, and recent, plus usage for today and the last seven days. Search and copy one-time codes and passwords from your secrets, or generate a password. Conversations also send system notifications when they finish, need confirmation, or fail.
-
-### Qwen and Xiaomi MiMo
-
-New presets for Alibaba Cloud Qwen (China, International, and Coding Plan) and Xiaomi MiMo (including Token Plan), with every provider's models synced as of 2026-10-25.
-
-[Connection guide](https://onevium.com/docs/providers) · [Everything new in 1.3.2](releases/1.3.2.md)
-
-### Before you upgrade
-
-The first launch backs up and verifies your data before upgrading it, and 1.3.1 cannot read the upgraded data. On macOS, install 1.3.2 manually from the DMG; from 1.3.2 on, a stable signature lets later versions update in the app. Grant screen recording, microphone, and input monitoring once more after this update, and choose Always Allow when Keychain asks for your password on the first launch of each new version. [Install and update Onevium](https://onevium.com/docs/installation#updates)
-
-<details>
-<summary><strong>In 1.3.1: secrets, servers, and a home for images</strong></summary>
-
-### Let AI use saved credentials by reference
-
-Keep server, database, API, and cloud credentials in Settings → Secrets and hosts, encrypted with your system keychain. The AI refers to an item by name; Onevium fills in the value on your computer when a command runs, masks known secret values in output, and follows your approval settings. Bring in values from existing config files and CLI accounts without retyping them, and store one-time code seeds so codes are filled in for you.
-
-AI use is off until you turn it on. Approval settings include time-limited grants and optional periods without prompts; ordinary unanswered requests default to allowing one use after two minutes, which you can change to deny. Credential files such as SSH private keys and cloud CLI configs are protected too: the AI has to ask on your computer before reading them.
-
-### Work on your servers over SSH
-
-Add a server or import it from `~/.ssh/config`, check its fingerprint on the first connection, and let the AI run commands or read and write files there. Approve once, for a few minutes, or for the whole session, and stop at any time; locking the screen ends every approval.
-
-### Images get their own page
-
-Open Images in the navigation rail to start from a template or a style, choose the service, aspect ratio, resolution, and number of images, and keep every result in My work. When you want a change, continue the original conversation beside the image.
-
-Image creation needs a separately configured image service.
-
-[Image creation and canvas](https://onevium.com/docs/image-creation)
-
-### Replies that read more smoothly
-
-Curtain reveal now uncovers text word by word, cards ease in as they arrive, and a finished reply stays in place when its steps fold. Switching conversations shows them in one step.
-
-[1.3.1 release notes](releases/1.3.1.md)
+[查看脚本、指定版本与安装说明](install/README.md)。
 
 </details>
 
-<details>
-<summary><strong>In 1.3.0: more ways to arrange your work</strong></summary>
+## 可以自由组合的功能亮点
 
-### A workspace that follows the task
+- **多模型接力与队伍协作**：在会话中切换模型，为不同成员分配模型与任务，把调研、执行和检查串成一条流程。
+- **浏览器多身份 × 独立网络代理**：为不同账号保存独立 Cookie、登录状态与网络线路，支持 HTTP、HTTPS、SOCKS5，按任务选择合适的身份。
+- **秘钥与主机管理**：在本机加密保存 API、数据库与 SSH 凭据，让 AI 按名称引用；使用过程遵循授权设置，并遮蔽输出中的已知秘钥。
+- **SSH 远程工作**：连接服务器，让 AI 在授权范围内执行命令、读写文件，按一次、限时或会话管理权限。
+- **多渠道接入办公与沟通软件**：连接飞书、钉钉、Discord 的群聊与私聊，以及微信私聊，让项目助手在已有沟通入口接收任务并返回结果。
+- **Skills × MCP × 插件**：把团队流程整理为可复用技能，连接业务工具，再按项目和任务组合使用。
+- **定时自动化与通知**：在 Onevium 运行期间安排周期任务，会话完成、需要确认或出错时接收通知。
+- **可追溯记忆**：查看记忆的来源会话、依据与修改记录；回答使用记忆时可以追溯，不用只依赖一段越来越长的聊天记录。
 
-The new navigation rail, sidebar, and tabs bring projects, conversations, and results together. Browser pages, files, terminal, and Review each have a place. When a preview needs more room, dock the conversation in a corner and continue through its floating panel.
+**组合示例：** 从飞书接收任务 → 选择模型或组织队伍 → 用对应身份与代理访问业务页面 → 在授权范围内引用秘钥、处理文件 → 汇总结果并回复渠道。先接通任务需要的服务与权限，再把验证过的步骤沉淀为 Skill 或定时流程。
 
-Inspect the current turn's changes, branch differences, or the whole workspace. Add comments beside code lines and ask AI to continue. For projects with multiple Git repositories, select the relevant repository or isolate a task in a worktree.
+[浏览器与身份](https://onevium.com/zh/docs/browser-automation) · [队伍协作](https://onevium.com/zh/docs/teams) · [办公渠道](https://onevium.com/zh/docs/team-channels) · [秘钥与 SSH 更新](releases/1.3.1.zh-CN.md) · [记忆与网络线路更新](releases/1.3.2.zh-CN.md)
 
-[Files, terminal, and Review](https://onevium.com/docs/files-terminal-review) · [Worktrees](https://onevium.com/docs/worktrees)
+## 关注更新，试试工作流，也告诉我们你需要什么
 
-### Follow a new direction, or return to an earlier point
+**关注 [@Onevium](https://github.com/Onevium)**，了解新版本、工作流示例和可复用的 Agent Skills。如果 Onevium 对你有帮助，欢迎 **[Star 这个仓库](https://github.com/Onevium/Onevium)**，让更多人发现它。想接收版本通知，可以在本仓库选择 **Watch → Custom → Releases**。
 
-Create a new conversation from an existing reply to explore another approach while keeping the original discussion. Preview the rewind scope, then choose to rewind just the conversation or also restore recorded file changes. File restoration may be unavailable when history is missing or conflicts exist.
+| 继续探索 Onevium 的项目 | 入口 |
+| --- | --- |
+| 适用于 Claude Code、Codex 等工具的工作流 | [Agent Skills](https://github.com/Onevium/skills) |
+| Onevium 应用内的插件与技能 | [Onevium Skill Community](https://github.com/Onevium/onevium-skill-community) |
 
-[Projects and conversations](https://onevium.com/docs/projects-and-sessions)
-
-### Separate identities inside the browser
-
-Choose an identity for each browser tab to use work and test accounts on the same site. Set the default identity for new pages, or clear one site's data without clearing everything else.
-
-On macOS, import cookies and saved passwords from Chrome, Edge, or Brave, and manage saved passwords in the browser settings. **Importing cookies does not guarantee a signed-in session**; sites may still require a fresh login or verification.
-
-[Browser guide](https://onevium.com/docs/browser-automation)
-
-### Make image creation part of the task
-
-Connect a supported OpenAI or Google Gemini image service and bring prompts, references, and edit requests into the conversation. Mark regions, add notes, compare before and after, browse previous versions, and save the result you want.
-
-Image creation needs a separately configured image service and its tools enabled. Available models and costs depend on the connected service.
-
-[Image creation and canvas](https://onevium.com/docs/image-creation) · [1.3.0 release notes](releases/1.3.0.md)
-
-</details>
-
-## Turn data into a useful conversation
-
-“Analyze this week’s store data, chart the revenue trend, and suggest one experiment for next week.”
-
-Start with a small table. Put the summary, trend, and channel comparison in the same workspace, then discuss what the evidence means.
-
-![Onevium 1.3.0 reporting workspace with a synthetic store report, revenue trend, and channel comparison](assets/report-1.2.4.png)
-
-*Sales, orders, channels, and conclusions in this example are synthetic. No live store is shown.*
-
-[Try the development and reporting examples](examples/README.md) · [Chart workflows](https://onevium.com/docs/widget-workflows)
-
-## Bring your services. Build your own way of working.
-
-- **Choose a model service.** Sign in to Claude Code, or configure a supported provider or custom connection. Your Onevium account and license are separate from model-service access. [Connection guide](https://onevium.com/docs/providers)
-- **Save repeatable processes as Skills.** Define inputs, steps, and deliverables for recurring work; connect tools through MCP and plugins. [Skills](https://onevium.com/docs/skills) · [MCP](https://onevium.com/docs/mcp-servers) · [Plugins](https://onevium.com/docs/plugins)
-- **Give different roles a task.** Use specialized agents and team collaboration, follow their progress, and review the results. [Team workflows](https://onevium.com/docs/teams)
-- **Schedule recurring work.** Run scheduled tasks while Onevium is running on your computer. [Scheduled automation](https://onevium.com/docs/scheduled-runs)
-- **Connect messaging channels.** Configure Feishu, DingTalk, Discord, or WeChat as another entry point for conversations. [Channel guide](https://onevium.com/docs/team-channels)
-
-## Choose a theme for the work ahead
-
-Warm paper, Neutral light, Nord, or Catppuccin: keep the sidebar, conversation, and preview in tune. Here is the same synthetic report in four built-in palettes.
-
-![Onevium 1.3.0 in Warm paper, Neutral light, Nord, and Catppuccin themes](assets/themes-1.2.4.png)
-
-## Open it. Finish one small task.
-
-1. Install Onevium, complete account sign-in or license activation, and connect an available model service.
-2. Choose a project directory and create a conversation.
-3. Give it one concrete goal: **“Build a clear product page for this project, show me the preview, and list the files you changed.”**
-4. Inspect the results and file changes, then refine them. Add a Skill when you want to reuse the process.
-
-[Getting started](https://onevium.com/docs/getting-started) · [Quick guides](guides/README.md) · [Onevium skills community](https://github.com/Onevium/onevium-skill-community)
+遇到问题，或有想完成的工作流？欢迎[提交 Issue](https://github.com/Onevium/Onevium/issues)，或联系 support@onevium.com。
 
 ---
 
-[Website](https://onevium.com) · [Documentation](https://onevium.com/docs) · [Changelog](CHANGELOG.md) · [Feedback](https://github.com/Onevium/Onevium/issues) · support@onevium.com
+[官网](https://onevium.com/zh) · [使用文档](https://onevium.com/zh/docs) · [更新日志](CHANGELOG.md) · [全部版本](https://github.com/Onevium/Onevium/releases)
 
-This repository contains product information, demo assets, public installation helpers, and Release installers. It does not contain the application's source code. See [Releases](https://github.com/Onevium/Onevium/releases) for the changes in each published version.
+本仓库提供产品介绍、演示素材、公开安装辅助脚本与 Release 安装包，不包含应用源码。
