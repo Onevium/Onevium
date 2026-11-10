@@ -10,7 +10,7 @@
 
 A **local-first desktop AI workspace**. Bring multiple models, browser pages, files, and business tools into one project. Write code, research, and create images while reviewing the results as you go.
 
-**[Download Onevium](https://github.com/Onevium/Onevium/releases/latest)** · [Getting started](https://onevium.com/docs/getting-started) · [What's new](releases/1.3.2.md)
+**[Download Onevium](https://github.com/Onevium/Onevium/releases/latest)** · [Getting started](https://onevium.com/docs/getting-started) · [What's new](releases/1.3.3.md)
 
 macOS (Apple Silicon & Intel) · Windows x64
 
@@ -60,17 +60,35 @@ These screenshots use the same 1.3.0 development demo described above.
 
 </details>
 
+## What's new
+
+### v1.3.3 — Space, model controls and daily reviews
+
+- **Space** — Keep documents, tables, presentations and webpages with their discussions, comments and versions, and work on them beside a conversation.
+- **Models and thinking** — Fable 5.2, GPT-6.1 Terra and GPT Image 2.6, plus one-turn Ultrathink and separate collaboration controls on supported Claude connections.
+- **Browser and hub** — Record a tab, resolve live confirmations from quick access, and import one-time codes from QR images or supported batches.
+- **Daily review** — Install the official community Skill separately, save concise reports and source-backed lessons in Space, and optionally schedule it. Old briefing schedules are not migrated automatically.
+
+[Full release notes](releases/1.3.3.md) · [Space tutorial](https://onevium.com/docs/space) · [Daily review tutorial](https://onevium.com/docs/daily-review)
+
+<details>
+<summary>v1.3.2 — Evidence-backed memory, browser identities and the menu-bar hub</summary>
+
+[Read the 1.3.2 release and upgrade notes](releases/1.3.2.md).
+
+</details>
+
 ## Get Onevium
 
-**Stable release: 1.3.2.** [See the changes and upgrade notes](releases/1.3.2.md).
+**Stable release: 1.3.3.** [See the changes and upgrade notes](releases/1.3.3.md).
 
 | Platform | Download |
 | --- | --- |
-| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
-| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
-| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
+| macOS · Apple Silicon | [Download arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-arm64.dmg) |
+| macOS · Intel | [Download x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-x64.dmg) |
+| Windows · x64 | [Download EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-Setup-1.3.3.exe) |
 
-**Upgrading to 1.3.2?** On macOS, quit Onevium and install this update manually from the DMG. The first launch upgrades local data; 1.3.1 cannot read the upgraded data. Read the [upgrade, signing, and recovery notes](https://onevium.com/docs/installation#updates) before updating.
+**Upgrading from 1.3.2:** macOS keeps the same fixed Onevium signature and supports in-app updates with differential downloads when available. Older ad-hoc test builds need one manual installation. Startup backs up and verifies the main database before migration; older apps cannot open the new data. Include Space in a full data-directory backup. Read the [upgrade and recovery notes](https://onevium.com/docs/installation#updates).
 
 The current stable release has no Linux or Windows arm64 installer. Complete account sign-in or license activation, then connect an available model service. [Installation and compatibility](https://onevium.com/docs/installation) · [Team inquiries](https://onevium.com/pricing).
 

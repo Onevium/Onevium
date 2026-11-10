@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.3.3
+
+Space resources, discussions and version history; Fable 5.2, GPT-6.1 Terra and GPT Image 2.6; browser recordings and live hub confirmations. The separately installed Daily review Skill replaces fixed briefings with reports and lessons in Space plus optional scheduled tasks.
+
+资料空间、关联讨论与版本历史；Fable 5.2、GPT-6.1 Terra 和 GPT Image 2.6；浏览器录制与快捷中心实时确认。单独安装的每日复盘 Skill 可把日报和经验保存到资料空间，并按需配置定时任务。
+
+[English notes](releases/1.3.3.md) · [中文说明](releases/1.3.3.zh-CN.md)
+
 ## 1.3.2
 
 Evidence-backed memory with a single memory library and markers in answers, browser identities with their own sign-ins and network routes, a menu-bar hub, conversation notifications and Dock shortcuts, scheduled database backups, Qwen and Xiaomi MiMo presets, and fixes for sign-in, replies, and cookie import. On macOS this update is installed manually; see the notes before you update.

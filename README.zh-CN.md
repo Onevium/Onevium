@@ -10,7 +10,7 @@
 
 **Local-first · 本地优先**的桌面 AI 工作台。把多模型、浏览器、文件与业务工具组织在同一项目中，写代码、查资料、做图片，边执行，边检查成果。
 
-**[下载 Onevium](https://github.com/Onevium/Onevium/releases/latest)** · [开始使用](https://onevium.com/zh/docs/getting-started) · [最新变化](releases/1.3.2.zh-CN.md)
+**[下载 Onevium](https://github.com/Onevium/Onevium/releases/latest)** · [开始使用](https://onevium.com/zh/docs/getting-started) · [最新变化](releases/1.3.3.zh-CN.md)
 
 macOS（Apple Silicon 与 Intel）· Windows x64
 
@@ -60,17 +60,35 @@ Onevium 已在**客服、物流、跨境广告等行业的企业**中使用。�
 
 </details>
 
+## 最新变化
+
+### v1.3.3 — 资料空间、模型与每日复盘
+
+- **资料空间** — 把文档、表格、演示文稿和网页连同讨论、评论与版本放在一起，在聊天工作台继续处理。
+- **模型与思考** — Fable 5.2、GPT-6.1 Terra、GPT Image 2.6；支持的 Claude 连接提供单轮 Ultrathink 和独立协作设置。
+- **浏览器与快捷中心** — 录制标签页，在菜单栏处理确认，并通过二维码或批量方式导入验证码。
+- **每日复盘** — 单独安装官方社区 Skill，把简短日报和有来源的经验保存在资料空间，按需设置每日任务；旧简报计划不会自动迁移。
+
+[完整更新说明](releases/1.3.3.zh-CN.md) · [资料空间教程](https://onevium.com/zh/docs/space) · [每日复盘教程](https://onevium.com/zh/docs/daily-review)
+
+<details>
+<summary>v1.3.2 — 有依据的记忆、浏览器身份与网络线路、菜单栏快捷中心</summary>
+
+[查看 1.3.2 更新与升级说明](releases/1.3.2.zh-CN.md)。
+
+</details>
+
 ## 下载 Onevium
 
-**当前稳定版：1.3.2。** [查看更新内容与升级须知](releases/1.3.2.zh-CN.md)。
+**当前稳定版：1.3.3。** [查看更新内容与升级须知](releases/1.3.3.zh-CN.md)。
 
 | 系统 | 下载 |
 | --- | --- |
-| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
-| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
-| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
+| macOS · Apple Silicon | [下载 arm64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-arm64.dmg) |
+| macOS · Intel | [下载 x64 DMG](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-x64.dmg) |
+| Windows · x64 | [下载 EXE](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-Setup-1.3.3.exe) |
 
-**准备升级到 1.3.2？** macOS 用户需要先退出 Onevium，再通过 DMG 手动安装本次更新。首次启动会升级本地数据，1.3.1 无法直接读取升级后的数据。更新前请阅读[升级、签名与恢复说明](https://onevium.com/zh/docs/installation#updates)。
+**从 1.3.2 升级：** macOS 沿用固定 Onevium 签名，可在应用内更新并在条件允许时使用差量下载；旧 ad-hoc 测试包需手动安装一次。首次启动先备份和校验主数据库，再迁移数据；旧版不能直接打开新数据。资料空间需纳入整个数据目录的备份。请阅读[升级与恢复说明](https://onevium.com/zh/docs/installation#updates)。
 
 当前稳定版没有 Linux 或 Windows arm64 安装包。安装后完成账号登录或授权激活，再连接可用的模型服务。[安装与系统兼容性](https://onevium.com/zh/docs/installation) · [企业与团队咨询](https://onevium.com/zh/pricing)。
 

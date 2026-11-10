@@ -25,3 +25,15 @@ All figures below are invented. Currency: USD. / 以下均为模拟数据，币�
 > 分析这五天的店铺数据：画收入趋势，汇总收入和订单，给出下周一项实验建议。明确区分数据事实和推测。
 
 For screenshots of these workflows, see [the product showcase](../README.md). Read the full [official documentation](https://onevium.com/docs) or [中文文档](https://onevium.com/zh/docs).
+
+## Daily review in Space / 资料空间中的每日复盘
+
+After installing the official Daily review Skill, try a manual run before scheduling it. / 安装官方每日复盘 Skill 后，先手动执行，再考虑定时运行。
+
+> Use the Daily review Skill for this project only. You may sample 3–5 recent conversations, prioritizing my explicit feedback. Save a short report and separate source-backed lessons in my Work review space. Reuse today's report and preserve manual edits. Do not create a schedule yet.
+
+> 使用每日复盘 Skill，只复盘当前项目。允许抽样近期 3–5 个会话，优先依据我的明确反馈。把简短日报和有来源的经验分别保存到「工作复盘」资料空间，复用今天的日报并保留手动编辑。这次先不要创建定时任务。
+
+Open the saved documents and check their sources. / 打开实际保存的文档并核对来源。
+
+[Full guide](https://onevium.com/docs/daily-review) · [完整教程](https://onevium.com/zh/docs/daily-review)

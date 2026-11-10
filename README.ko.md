@@ -10,7 +10,7 @@
 
 **Local-first(로컬 우선)** 데스크톱 AI 작업 공간입니다. 여러 모델, 브라우저, 파일, 업무 도구를 하나의 프로젝트에 모아 코드 작성, 자료 조사, 이미지 제작을 진행하면서 결과를 확인하세요.
 
-**[Onevium 다운로드](https://github.com/Onevium/Onevium/releases/latest)** · [시작하기(영어)](https://onevium.com/docs/getting-started) · [새로운 기능(영어)](releases/1.3.2.md)
+**[Onevium 다운로드](https://github.com/Onevium/Onevium/releases/latest)** · [시작하기(영어)](https://onevium.com/docs/getting-started) · [새로운 기능(영어)](releases/1.3.3.md)
 
 macOS(Apple Silicon 및 Intel) · Windows x64
 
@@ -60,17 +60,23 @@ Onevium은 이미 **고객 서비스, 물류, 크로스보더 광고 분야의 �
 
 </details>
 
+## v1.3.3의 새로운 기능
+
+Space에서 문서·표·웹페이지와 버전 기록을 관리하고 대화 옆에서 작업할 수 있습니다. Fable 5.2, GPT-6.1 Terra, GPT Image 2.6, 브라우저 녹화, 확인 요청 처리, 별도로 설치하는 Daily review Skill을 추가했습니다.
+
+[업데이트 안내(영어)](releases/1.3.3.md) · [Space(영어)](https://onevium.com/docs/space) · [Daily review(영어)](https://onevium.com/docs/daily-review)
+
 ## Onevium 다운로드
 
-**현재 안정 버전: 1.3.2.** [변경 사항 및 업그레이드 안내(영어)](releases/1.3.2.md).
+**현재 안정 버전: 1.3.3.** [변경 사항 및 업그레이드 안내(영어)](releases/1.3.3.md).
 
 | 플랫폼 | 다운로드 |
 | --- | --- |
-| macOS · Apple Silicon | [arm64 DMG 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-arm64.dmg) |
-| macOS · Intel | [x64 DMG 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-1.3.2-x64.dmg) |
-| Windows · x64 | [EXE 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.2/Onevium-Setup-1.3.2.exe) |
+| macOS · Apple Silicon | [arm64 DMG 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-arm64.dmg) |
+| macOS · Intel | [x64 DMG 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-x64.dmg) |
+| Windows · x64 | [EXE 다운로드](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-Setup-1.3.3.exe) |
 
-**1.3.2로 업그레이드하시나요?** macOS에서는 Onevium을 종료한 뒤 DMG로 이번 업데이트를 수동 설치해야 합니다. 처음 실행할 때 로컬 데이터가 업그레이드되며, 1.3.1은 업그레이드된 데이터를 직접 읽을 수 없습니다. 업데이트 전에 [업그레이드, 서명 및 복구 안내(영어)](https://onevium.com/docs/installation#updates)를 읽어주세요.
+**1.3.2에서 업데이트:** macOS는 같은 Onevium 서명을 유지하며 앱 내 업데이트와 가능한 경우 차등 다운로드를 지원합니다. 이전 ad-hoc 테스트 버전은 한 번 수동 설치해야 합니다. 처음 실행할 때 데이터베이스를 백업·검증한 후 이전합니다. Space를 포함한 전체 데이터를 보관하고 [업데이트 및 복구 안내(영어)](https://onevium.com/docs/installation#updates)를 확인하세요.
 
 현재 안정 버전에는 Linux 또는 Windows arm64용 설치 파일이 없습니다. 설치 후 계정 로그인 또는 라이선스 활성화를 완료하고, 사용 가능한 모델 서비스를 연결하세요. [설치 및 호환성(영어)](https://onevium.com/docs/installation) · [기업 및 팀 문의(영어)](https://onevium.com/pricing).
 

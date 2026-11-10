@@ -1,5 +1,8 @@
 # Earlier release notes
 
+Latest: [1.3.3 English](1.3.3.md) · [1.3.3 中文](1.3.3.zh-CN.md) · [All recent versions](../CHANGELOG.md)
+
+
 [Current release](1.2.0.md) · [Home](../README.md)
 
 Archived from the earlier public README. These notes describe the releases named below, not the current platform support.
