@@ -1,6 +1,6 @@
 # Install Onevium / 安装 Onevium
 
-[English home](../README.md) · [中文首页](../README.zh-CN.md)
+[English home](../README.en.md) · [中文首页](../README.zh-CN.md)
 
 These helpers download an official GitHub Release installer, verify its SHA-256 against that release's `SHA256SUMS`, and open the normal installation interface. They select the latest **stable** release when no version is given. The current stable release is **1.3.3**.
 

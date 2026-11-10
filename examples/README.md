@@ -1,4 +1,4 @@
-# Small tasks worth trying / 两个轻量示例
+# Small tasks worth trying / 可以尝试的轻量任务
 
 [Quick guides](../guides/README.md) · [Home](../README.md)
 
