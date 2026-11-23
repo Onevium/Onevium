@@ -1,6 +1,6 @@
 # Earlier release notes
 
-Latest: [1.3.3 English](1.3.3.md) · [1.3.3 中文](1.3.3.zh-CN.md) · [All recent versions](../CHANGELOG.md)
+Latest: [1.3.4 English](1.3.4.md) · [1.3.4 中文](1.3.4.zh-CN.md) · [All recent versions](../CHANGELOG.md)
 
 
 [Current release](1.2.0.md) · [Home](../README.md)

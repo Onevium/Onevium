@@ -1,5 +1,13 @@
 # Release history / 版本记录
 
+## 1.3.4
+
+Live progress stays visible until the final answer. Gemini gateways respect the selected reasoning level, GLM-5.4 joins the Coding Plan catalog, and code copying preserves line breaks.
+
+最新进展保留到最终答复，Gemini 网关按所选档位推理，智谱 Coding Plan 增加 GLM-5.4，复制代码保留换行。
+
+[English notes](releases/1.3.4.md) · [中文说明](releases/1.3.4.zh-CN.md)
+
 ## 1.3.3
 
 Space resources, discussions and version history; Fable 5.2, GPT-6.1 Terra and GPT Image 2.6; browser recordings and live hub confirmations. The separately installed Daily review Skill replaces fixed briefings with reports and lessons in Space plus optional scheduled tasks.

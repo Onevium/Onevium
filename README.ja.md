@@ -10,7 +10,7 @@
 
 **Local-first（ローカルファースト）**のデスクトップAIワークスペース。複数のモデル、ブラウザー、ファイル、業務ツールを同じプロジェクトにまとめ、コード作成、調査、画像制作を進めながら成果を確認できます。
 
-**[Oneviumをダウンロード](https://github.com/Onevium/Onevium/releases/latest)** · [はじめに（英語）](https://onevium.com/docs/getting-started) · [更新情報（英語）](releases/1.3.3.md)
+**[Oneviumをダウンロード](https://github.com/Onevium/Onevium/releases/latest)** · [はじめに（英語）](https://onevium.com/docs/getting-started) · [更新情報（英語）](releases/1.3.4.md)
 
 macOS（Apple Silicon / Intel）· Windows x64
 
@@ -60,21 +60,21 @@ Oneviumはすでに、**カスタマーサービス、物流、越境広告の�
 
 </details>
 
-## v1.3.3 の新機能
+## v1.3.4 の新機能
 
-Spaceで文書・表・Webページとその履歴を管理し、会話の横で作業できます。Fable 5.2、GPT-6.1 Terra、GPT Image 2.6、ブラウザー録画、確認操作、別途インストールするDaily review Skillを追加しました。
+回答が完了するまで最新の進捗を表示します。コピーしたコードの改行を保持し、Gemini ゲートウェイの推論レベル選択と智譜 Coding Plan の GLM-5.4 に対応しました。
 
-[更新情報（英語）](releases/1.3.3.md) · [Space（英語）](https://onevium.com/docs/space) · [Daily review（英語）](https://onevium.com/docs/daily-review)
+[更新情報（英語）](releases/1.3.4.md)
 
 ## Oneviumをダウンロード
 
-**現在の安定版：1.3.3。** [変更内容とアップグレードの注意事項（英語）](releases/1.3.3.md)。
+**現在の安定版：1.3.4。** [変更内容とアップグレードの注意事項（英語）](releases/1.3.4.md)。
 
 | プラットフォーム | ダウンロード |
 | --- | --- |
-| macOS · Apple Silicon | [arm64 DMGをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-arm64.dmg) |
-| macOS · Intel | [x64 DMGをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-1.3.3-x64.dmg) |
-| Windows · x64 | [EXEをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.3/Onevium-Setup-1.3.3.exe) |
+| macOS · Apple Silicon | [arm64 DMGをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.4/Onevium-1.3.4-arm64.dmg) |
+| macOS · Intel | [x64 DMGをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.4/Onevium-1.3.4-x64.dmg) |
+| Windows · x64 | [EXEをダウンロード](https://github.com/Onevium/Onevium/releases/download/v1.3.4/Onevium-Setup-1.3.4.exe) |
 
 **1.3.2からの更新：** macOSでは同じOnevium署名を継続し、アプリ内更新と、利用可能な場合の差分ダウンロードに対応します。古いad-hocテスト版は一度手動でインストールしてください。初回起動時にデータベースをバックアップ・検証して移行します。Spaceを含むデータ全体を保管し、[更新と復元の説明（英語）](https://onevium.com/docs/installation#updates)をご確認ください。
 
