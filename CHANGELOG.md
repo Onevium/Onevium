@@ -2,11 +2,11 @@
 
 ## 1.3.4
 
-Live progress stays visible until the final answer. Gemini gateways respect the selected reasoning level, GLM-5.4 joins the Coding Plan catalog, and code copying preserves line breaks.
+Live progress and task recovery, sidebar ordering, browser takeover and recording, Space and file previews, GPT-6.2, Gemini 4 and GLM-5.4, scoped vault approvals, desktop startup and background updates.
 
-最新进展保留到最终答复，Gemini 网关按所选档位推理，智谱 Coding Plan 增加 GLM-5.4，复制代码保留换行。
+会话实时进度与恢复、侧栏排序、浏览器接管及录制、资料空间与文件预览、GPT-6.2、Gemini 4 和 GLM-5.4、限定范围的秘钥库授权，以及桌面启动与后台更新。
 
-[English notes](releases/1.3.4.md) · [中文说明](releases/1.3.4.zh-CN.md)
+[Complete 1.3.3 → 1.3.4 upgrade notes](releases/1.3.4.md) · [1.3.3 → 1.3.4 完整升级清单](releases/1.3.4.zh-CN.md)
 
 ## 1.3.3
 
